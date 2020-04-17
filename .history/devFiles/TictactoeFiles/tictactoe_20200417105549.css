@@ -1,9 +1,6 @@
 *,*::after, *::before{
     box-sizing: border-box;
 }
-:root {
-    --cell-size:100px;
-}
 
 body{
     margin:0;
@@ -19,8 +16,8 @@ body{
     /* this resizes the grid and makes all the cells automatically evenly sized */
 }
 .cellBOne{
-    width: var(--cell-size);
-    height: var(--cell-size);
+    width: 100px;
+    height: 100px;
     background-color: black;
-    border: 1px solid whitesmoke;
+    border: 1px solid;
 }

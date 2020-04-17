@@ -1,0 +1,20 @@
+*,*::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+}
+
+.boardOne{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.cellBOne{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}

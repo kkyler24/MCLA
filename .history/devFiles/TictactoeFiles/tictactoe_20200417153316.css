@@ -19,7 +19,7 @@ body{
 }
 
 .BoardOne{
-    width: 100vw;
+    width: 115vw;
     height: 50vh;
     display: grid;
     justify-content: center;
@@ -38,7 +38,6 @@ body{
     align-items: center;
     position: relative;
     cursor: pointer;
-    
 }
 .cellBOne:first-child,
 .cellBOne:nth-child(2),
@@ -89,6 +88,3 @@ body{
     cursor: not-allowed;
 }
 
-.cellBOne:hover{
-    background-color: rgba(188, 199, 209, 0.753);
-}

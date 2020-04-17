@@ -7,20 +7,13 @@
     /* this makes the preview marks 90% of the cell size it edits the width of your dot or dash */
 }
 
-h1{
-    margin-top: 100px;
-    text-align: center;
-    font-size: 75px;
-    font-weight: 100;
-}
-
 body{
     margin:0;
 }
 
 .BoardOne{
     width: 100vw;
-    height: 50vh;
+    height: 100vh;
     display: grid;
     justify-content: center;
     align-content: center;
@@ -38,7 +31,6 @@ body{
     align-items: center;
     position: relative;
     cursor: pointer;
-    
 }
 .cellBOne:first-child,
 .cellBOne:nth-child(2),
@@ -89,6 +81,3 @@ body{
     cursor: not-allowed;
 }
 
-.cellBOne:hover{
-    background-color: rgba(188, 199, 209, 0.753);
-}

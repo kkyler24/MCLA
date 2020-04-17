@@ -7,20 +7,13 @@
     /* this makes the preview marks 90% of the cell size it edits the width of your dot or dash */
 }
 
-h1{
-    margin-top: 100px;
-    text-align: center;
-    font-size: 75px;
-    font-weight: 100;
-}
-
 body{
     margin:0;
 }
 
 .BoardOne{
     width: 100vw;
-    height: 50vh;
+    height: 100vh;
     display: grid;
     justify-content: center;
     align-content: center;
@@ -37,8 +30,6 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
-    cursor: pointer;
-    
 }
 .cellBOne:first-child,
 .cellBOne:nth-child(2),
@@ -62,7 +53,7 @@ body{
 
 .cellBOne.dash::before{
     content: "";
-    width: calc(var(--mark-size)*.20);
+    width: calc(var(--mark-size)*.16);
     /* controls the height of the dashes */
     transform: rotate(90deg);
     height: var(--mark-size);
@@ -74,21 +65,12 @@ body{
 .cellBOne.circle::after{
     content: "";
     position: absolute;
-    width: calc(var(--mark-size)*1.2);
+    width: calc(var(--mark-size)*.16);
     /* controls the height of the cricles */
     /* transform: rotate(90deg); */
-    height: calc(var(--mark-size)*1.2);
+    height: var(--mark-size);
     background-color: rgb(8, 8, 8);
     /* controls how the dashes look */
     border-radius: 50%;
     
-}
-
-.cellBOne.circle,
-.cellBOne.dash{
-    cursor: not-allowed;
-}
-
-.cellBOne:hover{
-    background-color: rgba(188, 199, 209, 0.753);
 }

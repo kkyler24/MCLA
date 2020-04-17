@@ -27,9 +27,18 @@ function TicTacToeGame() {
 //   });
 
  function Board(){
-     this.positions = Array.from(document.querySelectorAll(".cellBOne"));
-    console.log(this.positions);
-}
+    $(document).ready(function() { 
+    this.positions = $(".cellBOne").toArray() ;
+        { 
+            var i; 
+            var x = 
+            for (i = 0; i< x.length; i++) { 
+                alert(x[i].innerHTML); 
+            }  
+    };
+    
+    }); 
+ 
 
  function HumanPlayer(){
      

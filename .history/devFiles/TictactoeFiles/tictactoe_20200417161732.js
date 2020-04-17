@@ -20,16 +20,9 @@ function TicTacToeGame() {
 
  }
 
-//  let mutationObserver = new MutationObserver(function(mutations) {
-//     mutations.forEach(function(mutation) {
-//       console.log(mutation);
-//     });
-//   });
-
  function Board(){
-     this.positions = Array.from(document.querySelectorAll(".cellBOne"));
-    console.log(this.positions);
-}
+    this.positions = $(".cellBOne").toArray();
+ }
 
  function HumanPlayer(){
      

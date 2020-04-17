@@ -71,6 +71,5 @@ body{
     height: var(--mark-size);
     background-color: rgb(8, 8, 8);
     /* controls how the dashes look */
-    border-radius: 50%;
     
 }

@@ -3,8 +3,8 @@
 }
 :root {
     --cell-size:100px;
-    --mark-size:calc(var(--cell-size)*.7);
-    /* this makes the preview marks 90% of the cell size it edits the width of your dot or dash */
+    --mark-size:calc(var(--cell-size)*.9);
+    /* this makes the preview marks 90% of the cell size */
 }
 
 body{
@@ -29,7 +29,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 .cellBOne:first-child,
 .cellBOne:nth-child(2),
@@ -51,26 +50,12 @@ body{
     border-bottom: none;
 }
 
-.cellBOne.dash::before{
+.cellBOne.x::before,
+.cellBOne.x::after{
     content: "";
-    width: calc(var(--mark-size)*.16);
-    /* controls the height of the dashes */
+    width: calc(var(--mark-size)*.10);
     transform: rotate(90deg);
     height: var(--mark-size);
     background-color: rgb(8, 8, 8);
-    /* controls how the dashes look */
-    position: relative;
-}
-
-.cellBOne.circle::before{
-    content: "";
-    position: absolute;
-    width: var(--mark-size);
-    /* controls the height of the cricles */
-    /* transform: rotate(90deg); */
-    height: var(--mark-size);
-    background-color: rgb(8, 8, 8);
-    /* controls how the dashes look */
-    border-radius: 50%;
     
 }

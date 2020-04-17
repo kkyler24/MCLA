@@ -64,13 +64,11 @@ body{
 
 .cellBOne.circle::before{
     content: "";
-    position: absolute;
-    width: var(--mark-size);
-    /* controls the height of the cricles */
-    /* transform: rotate(90deg); */
+    width: calc(var(--mark-size)*.16);
+    /* controls the height of the dashes */
+    transform: rotate(90deg);
     height: var(--mark-size);
     background-color: rgb(8, 8, 8);
     /* controls how the dashes look */
-    border-radius: 50%;
-    
+    position: ;
 }

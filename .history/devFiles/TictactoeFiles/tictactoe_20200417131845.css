@@ -29,7 +29,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 .cellBOne:first-child,
 .cellBOne:nth-child(2),
@@ -51,26 +50,14 @@ body{
     border-bottom: none;
 }
 
-.cellBOne.dash::before{
+.cellBOne.x::before,
+.cellBOne.x::after{
     content: "";
-    width: calc(var(--mark-size)*.16);
+    width: calc(var(--mark-size)*.15);
     /* controls the height of the dashes */
     transform: rotate(90deg);
     height: var(--mark-size);
     background-color: rgb(8, 8, 8);
     /* controls how the dashes look */
-    position: relative;
-}
-
-.cellBOne.circle::before{
-    content: "";
-    position: absolute;
-    width: var(--mark-size);
-    /* controls the height of the cricles */
-    /* transform: rotate(90deg); */
-    height: var(--mark-size);
-    background-color: rgb(8, 8, 8);
-    /* controls how the dashes look */
-    border-radius: 50%;
     
 }

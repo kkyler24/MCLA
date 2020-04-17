@@ -51,7 +51,7 @@ body{
     border-bottom: none;
 }
 
-.cellBOne.dash::before{
+.cellBOne.x::before{
     content: "";
     width: calc(var(--mark-size)*.16);
     /* controls the height of the dashes */
@@ -60,17 +60,4 @@ body{
     background-color: rgb(8, 8, 8);
     /* controls how the dashes look */
     position: relative;
-}
-
-.cellBOne.circle::before{
-    content: "";
-    position: absolute;
-    width: var(--mark-size);
-    /* controls the height of the cricles */
-    /* transform: rotate(90deg); */
-    height: var(--mark-size);
-    background-color: rgb(8, 8, 8);
-    /* controls how the dashes look */
-    border-radius: 50%;
-    
 }

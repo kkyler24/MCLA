@@ -1,0 +1,30 @@
+*,*::after, *::before{
+    box-sizing: border-box;
+}
+:root {
+    --cell-size:100px;
+    --mark-size:cal(var(--cell-size)*.9);
+    /* this makes the preview marks 90% of the cell size */
+}
+
+body{
+    margin:0;
+}
+
+.BoardOne{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(3,auto);
+    /* this resizes the grid and makes all the cells automatically evenly sized */
+}
+.cellBOne{
+    width: var(--cell-size);
+    height: var(--cell-size);
+    background-color: black;
+    border: 1px solid whitesmoke;
+}

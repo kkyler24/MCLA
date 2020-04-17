@@ -26,13 +26,9 @@ function TicTacToeGame() {
 //     });
 //   });
 
-//  function Board() {
-//      this.positions 
-//      console.log(this.positions);
-// }
-//  function boardOne(){Array.from(document.querySelectorAll('.cellBOne'));} 
-// console.log(boardOne);
-
+ function Board() {
+     this.positions = Array.from(document.querySelectorAll('.cellBOne'));
+}
 
  function HumanPlayer(){
      

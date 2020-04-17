@@ -30,8 +30,8 @@ function TicTacToeGame() {
 //      this.positions 
 //      console.log(this.positions);
 // }
-//  function boardOne(){Array.from(document.querySelectorAll('.cellBOne'));} 
-// console.log(boardOne);
+ function boardOne(){Array.from(document.querySelectorAll('.cellBOne'));} 
+console.log(boardOne);
 
 
  function HumanPlayer(){

@@ -8,6 +8,7 @@
 const ticTacToeGame = new TicTacToeGame();
 ticTacToeGame.start();
 
+
 // creates new game
 function TicTacToeGame() {
     const board = new Board();
@@ -26,11 +27,13 @@ function TicTacToeGame() {
 //     });
 //   });
 
-//  function Board() {
-//      this.positions 
-//      console.log(this.positions);
-// }
-boardOne = Array.from(document.querySelectorAll('.cellBOne'));
+//  
+ function Board(){
+     Array.from(document.querySelectorAll('.cellBOne'));
+    console.log(this.position);
+    }
+ 
+
  function HumanPlayer(){
      
 }

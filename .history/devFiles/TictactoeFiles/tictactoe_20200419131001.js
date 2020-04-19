@@ -34,8 +34,6 @@ function TicTacToeGame() {
 this.position = Array.from(document.querySelectorAll('.cellBOne'));
     console.log(this.position);
  } 
-
- console.log(new Board())
     
 
  function HumanPlayer(){

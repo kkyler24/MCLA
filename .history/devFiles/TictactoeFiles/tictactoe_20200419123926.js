@@ -21,8 +21,6 @@ function TicTacToeGame() {
 
  }
 
- console.log(ticTacToeGame)
-
 //  let mutationObserver = new MutationObserver(function(mutations) {
 //     mutations.forEach(function(mutation) {
 //       console.log(mutation);
@@ -30,12 +28,10 @@ function TicTacToeGame() {
 //   });
 
 //  
- function Board(){
+ Function Board(){
 this.position = Array.from(document.querySelectorAll('.cellBOne'));
     console.log(this.position);
  } 
-
- console.log(new Board())
     
 
  function HumanPlayer(){

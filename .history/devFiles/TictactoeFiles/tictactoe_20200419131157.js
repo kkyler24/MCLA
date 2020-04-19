@@ -35,7 +35,7 @@ this.position = Array.from(document.querySelectorAll('.cellBOne'));
     console.log(this.position);
  } 
 
- console.log(new Board())
+ console.logn(new Board())
     
 
  function HumanPlayer(){

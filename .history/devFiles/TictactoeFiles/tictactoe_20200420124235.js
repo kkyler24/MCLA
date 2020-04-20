@@ -22,15 +22,9 @@ const config = {childList:true};
 const  observer = new MutationObserver(() => takeTurn());
 // now adding the observer to the board.positions so it can run through each (for each function) one to check for mutations. if there are mutations, then we call the take turn function. 
 board.positions.forEach((el) => observer.observe(el, config));
-takeTurn();
         }
         function takeTurn(){
-if (turn % 2 ===0 ){
-
-}
-
-            Turn++;
-            //the above determines who turn it is. and tells the player pr computer to take their turn.  
+            console.log("something changed")
 
         }
 

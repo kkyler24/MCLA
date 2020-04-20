@@ -12,8 +12,8 @@ ticTacToeGame.start();
 // creates new game
 function TicTacToeGame() {
     const board = new Board();
-    const humanPlayer = new HumanPlayer(baord);
-    const computerPlayer = new ComputerPlayer(board);
+    const humanPlayer = new HumanPlayer();
+    const computerPlayer = new ComputerPlayer();
     let turn = 0;
     this.start = function () {
         // This sets up the functions of the baord, players and turns.
@@ -53,13 +53,13 @@ function Board() {
 }
 
 
-function HumanPlayer(board) {
+function HumanPlayer() {
     this.takeTurn = function () {
         console.log("It's your turn");
     }
 }
 
-function ComputerPlayer(board) {
+function ComputerPlayer() {
     this.takeTurn = function () {
         console.log("Computers' turn");
     }

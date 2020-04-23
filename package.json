@@ -1,0 +1,29 @@
+{
+  "name": "mcla",
+  "version": "1.0.0",
+  "description": "This project aims to create a game that encourages decoding, of words , increase vocabulary and reading ability in a fun interactive non- conventional way. The software is specifically built for students with learning disabilities, but is inclusive of all students. ",
+  "main": "Home.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkyler24/MCLA.git"
+  },
+  "keywords": [
+    "Morse",
+    "code",
+    "games",
+    "TitTacToe",
+    "reading"
+  ],
+  "author": "Ky. Kyler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kkyler24/MCLA/issues"
+  },
+  "homepage": "https://github.com/kkyler24/MCLA#readme",
+  "dependencies": {
+    "require": "^2.4.20"
+  }
+}

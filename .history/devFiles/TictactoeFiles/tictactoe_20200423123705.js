@@ -1,8 +1,4 @@
-let require = require;
-let fs = require("fs");
-fs.readFile("./Alphabetconvert.js");
-
-
+let alphabetC = require("./Alphabetconvert").alphabetConversion;
 
 
 

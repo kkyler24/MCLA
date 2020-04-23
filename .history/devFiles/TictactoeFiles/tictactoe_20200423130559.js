@@ -1,5 +1,5 @@
-let require = require;
 let fs = require("fs");
+let require = require;
 fs.readFile("./Alphabetconvert.js");
 
 

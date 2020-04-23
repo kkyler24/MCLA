@@ -1,8 +1,39 @@
 
+// var charCodes= {};
+// charCodes["a"]="._";
+// charCodes["b"]="_...";
+// charCodes["c"]="_._.";
+// charCodes["d"]="_..";
+// charCodes["e"]=".";
+// charCodes["f"]=".._.";
+// charCodes["g"]="__.";
+// charCodes["h"]="....";
+// charCodes["i"]="..";
+// charCodes["j"]=".___";
+// charCodes["k"]="_._";
+// charCodes["l"]="._..";
+// charCodes["m"]="__";
+// charCodes["n"]="_.";
+// charCodes["o"]="___";
+// charCodes["p"]=".__.";
+// charCodes["q"]="__._";
+// charCodes["r"]="._.";
+// charCodes["s"]="...";
+// charCodes["t"]="_";
+// charCodes["u"]=".._";
+// charCodes["v"]="..._";
+// charCodes["w"]=".__";
+// charCodes["x"]="_.._";
+// charCodes["y"]="_.__";
+// charCodes["z"]="__..";
+// var temp=''
+
 // random words should be put in here and converted to morse code. the computer should evaluate if your letter box matches the randomized word to win the round. 
 // };
 const ticTacToeGame = new TicTacToeGame();
 ticTacToeGame.start();
+
+
 
 // creates new game
 function TicTacToeGame() {

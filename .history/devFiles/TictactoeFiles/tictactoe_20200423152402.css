@@ -26,7 +26,7 @@ body{
     align-content: center;
     align-items: center;
     justify-items: center;
-    grid-template-columns: repeat(3,auto);
+    grid-template-columns: repeat(4,auto);
     /* this resizes the grid and makes all the cells automatically evenly sized */
 }
 .cellBOne{
@@ -90,8 +90,8 @@ body{
     cursor: not-allowed;
 }
 
-.cellBOne:hover{   
-    background-color: rgb(174, 183, 192);
+
+
+.cellBOne:hover::before{
+    background-color: rgba(188, 199, 209, 0.753);
 }
-
-

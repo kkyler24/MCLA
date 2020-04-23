@@ -72,7 +72,8 @@ body{
 }
 
 
-.cellBOne.circle::before{
+/* .cellBOne.circle::before, */
+.BoardOne.circle.cellBOne:hover::after{
     content: "";
     position: absolute;
     width: calc(var(--mark-size)*1.2);
@@ -90,8 +91,6 @@ body{
     cursor: not-allowed;
 }
 
-.cellBOne:hover{   
-    background-color: rgb(174, 183, 192);
-}
+
 
 

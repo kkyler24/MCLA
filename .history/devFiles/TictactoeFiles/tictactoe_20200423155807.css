@@ -90,7 +90,7 @@ body{
     cursor: not-allowed;
 }
 
-.cellBOne:hover{   
+cellBOne:hover{   
     background-color: rgb(174, 183, 192);
 }
 

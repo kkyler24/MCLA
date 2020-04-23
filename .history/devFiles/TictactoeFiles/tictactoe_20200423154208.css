@@ -90,8 +90,17 @@ body{
     cursor: not-allowed;
 }
 
-.cellBOne:hover{   
-    background-color: rgb(174, 183, 192);
+
+
+.BoardOne.circle.cellBOne:hover::before,
+.BoardOne.circle.cellBOne:hover::after{
+    content: "dash";
+    position: absolute;
+    width: calc(var(--mark-size)*1.2);
+    /* controls the height of the cricles */
+    /* transform: rotate(90deg); */
+    height: calc(var(--mark-size)*1.2);
+    /* controls how the circle looks */
+    border-radius: 50%;
+    background-color: rgba(188, 199, 209, 0.753);
 }
-
-

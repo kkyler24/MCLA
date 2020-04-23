@@ -90,8 +90,8 @@ body{
     cursor: not-allowed;
 }
 
-.cellBOne:hover{   
-    background-color: rgb(174, 183, 192);
+.BoardOne.circle:hover::before{
+    background-color: lightslategrey;
 }
 
 

@@ -71,7 +71,7 @@ body{
     position: relative;
 }
 
-
+.cellBOne.circle::after
 .cellBOne.circle::before{
     content: "";
     position: absolute;
@@ -90,8 +90,13 @@ body{
     cursor: not-allowed;
 }
 
-.cellBOne:hover{   
-    background-color: rgb(174, 183, 192);
+
+
+
+
+
+
+.cellBOne.circle:hover:before,
+.cellBOne.dash:hover:before{
+    background-color: rgba(188, 199, 209, 0.753);
 }
-
-

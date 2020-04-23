@@ -67,12 +67,12 @@ body{
     transform: rotate(90deg);
     height: var(--mark-size);
     background-color: rgb(8, 8, 8);
-    /* controls how the dash look */
+    /* controls how the dashes look */
     position: relative;
 }
 
-
-.cellBOne.circle::before{
+.cellBOne.circle::after
+#BoardOne.dash:hover::after{
     content: "";
     position: absolute;
     width: calc(var(--mark-size)*1.2);
@@ -80,7 +80,7 @@ body{
     /* transform: rotate(90deg); */
     height: calc(var(--mark-size)*1.2);
     background-color: rgb(8, 8, 8);
-    /* controls how the circle looks */
+    /* controls how the dashes look */
     border-radius: 50%;
     
 }
@@ -90,8 +90,14 @@ body{
     cursor: not-allowed;
 }
 
-.cellBOne:hover{   
-    background-color: rgb(174, 183, 192);
+#BoardOne.dash:hover{
+
 }
 
 
+
+
+
+/* .cellBOne:hover{
+    background-color: rgba(188, 199, 209, 0.753);
+} */

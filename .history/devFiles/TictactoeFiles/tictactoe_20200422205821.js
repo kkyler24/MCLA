@@ -52,8 +52,7 @@ function HumanPlayer(board) {
     // This part may be unnecessary. as you have circles and dashes set up in css. figure out how to get that here. maybe a var and save the style?
     function huTurnTaken(event){
         event.target.innerText="X";
-        board.positions
-            .forEach(el =>removeEventListener("click", huTurnTaken));
+        board.positions.forEach(el =>el.removeEventListener("click", huTurnTaken));
     }
 }
 

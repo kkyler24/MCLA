@@ -53,7 +53,7 @@ function HumanPlayer(board) {
     function huTurnTaken(event){
         event.target.innerText="X";
         board.positions
-            .forEach(el =>removeEventListener("click", huTurnTaken));
+            .forEach(el => el.removeEventListener("click", huTurnTaken));
     }
 }
 

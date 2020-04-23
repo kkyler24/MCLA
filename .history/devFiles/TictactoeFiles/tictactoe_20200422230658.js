@@ -1,34 +1,32 @@
 // let alphabetC = require("./Alphabetconvert").alphabetConversion;
 
-
 var charCodes= {};
-charCodes["a"]="._";
-charCodes["b"]="_...";
-charCodes["c"]="_._.";
-charCodes["d"]="_..";
+charCodes["a"]=". _";
+charCodes["b"]="_ . . .";
+charCodes["c"]="_ . _ .";
+charCodes["d"]="_ . .";
 charCodes["e"]=".";
-charCodes["f"]=".._.";
-charCodes["g"]="__.";
-charCodes["h"]="....";
-charCodes["i"]="..";
-charCodes["j"]=".___";
-charCodes["k"]="_._";
-charCodes["l"]="._..";
-charCodes["m"]="__";
-charCodes["n"]="_.";
-charCodes["o"]="___";
-charCodes["p"]=".__.";
-charCodes["q"]="__._";
-charCodes["r"]="._.";
+charCodes["f"]=". . _ .";
+charCodes["g"]="_ _ .";
+charCodes["h"]=". . . .";
+charCodes["i"]=". .";
+charCodes["j"]=". _ _ _";
+charCodes["k"]="_ . _";
+charCodes["l"]=". _ . .";
+charCodes["m"]="_ _";
+charCodes["n"]="_ .";
+charCodes["o"]="_ _ _";
+charCodes["p"]=". _ _ .";
+charCodes["q"]="_ _ . _";
+charCodes["r"]=". _ .";
 charCodes["s"]="...";
 charCodes["t"]="_";
-charCodes["u"]=".._";
-charCodes["v"]="..._";
-charCodes["w"]=".__";
-charCodes["x"]="_.._";
-charCodes["y"]="_.__";
-charCodes["z"]="__..";
-
+charCodes["u"]=". . _";
+charCodes["v"]=". . . _";
+charCodes["w"]=". _ _";
+charCodes["x"]="_ . . _";
+charCodes["y"]="_ . _ _";
+charCodes["z"]="_ _ . .";
 var temp=''
 
 // random words should be put in here and converted to morse code. the computer should evaluate if your letter box matches the randomized word to win the round. 
@@ -79,7 +77,7 @@ function HumanPlayer(board) {
     }
     // This part may be unnecessary. as you have circles and dashes set up in css. figure out how to get that here. maybe a var and save the style?
     function huTurnTaken(event){
-        event.target.innerText=".";
+        event.target.innerText="X";
         board.positions
             .forEach(el =>removeEventListener("click", huTurnTaken));
     }
@@ -100,7 +98,7 @@ firstRow.forEach((cell,i)=>{
     if (cell.classList[1]=== "circle")
       firstRowString += ".";
       if (cell.classList[1]=== "dash")
-      firstRowString += "_";
+      firstRowString += "-";
 })
 console.log(firstRowString);
 

@@ -1,36 +1,11 @@
 // let alphabetC = require("./Alphabetconvert").alphabetConversion;
 
 
-var charCodes= {};
-charCodes["a"]="._";
-charCodes["b"]="_...";
-charCodes["c"]="_._.";
-charCodes["d"]="_..";
-charCodes["e"]=".";
-charCodes["f"]=".._.";
-charCodes["g"]="__.";
-charCodes["h"]="....";
-charCodes["i"]="..";
-charCodes["j"]=".___";
-charCodes["k"]="_._";
-charCodes["l"]="._..";
-charCodes["m"]="__";
-charCodes["n"]="_.";
-charCodes["o"]="___";
-charCodes["p"]=".__.";
-charCodes["q"]="__._";
-charCodes["r"]="._.";
-charCodes["s"]="...";
-charCodes["t"]="_";
-charCodes["u"]=".._";
-charCodes["v"]="..._";
-charCodes["w"]=".__";
-charCodes["x"]="_.._";
-charCodes["y"]="_.__";
-charCodes["z"]="__..";
-
-var temp=''
-
+// / var winningCombinations = {
+//     // userchoice: computerchoice
+//     rock: 'scissors', // you win
+//     paper: 'rock',    // you win
+//     scissors: 'paper' // you win
 // random words should be put in here and converted to morse code. the computer should evaluate if your letter box matches the randomized word to win the round. 
 // };
 const ticTacToeGame = new TicTacToeGame();
@@ -79,7 +54,7 @@ function HumanPlayer(board) {
     }
     // This part may be unnecessary. as you have circles and dashes set up in css. figure out how to get that here. maybe a var and save the style?
     function huTurnTaken(event){
-        event.target.innerText=".";
+        event.target.innerText="X";
         board.positions
             .forEach(el =>removeEventListener("click", huTurnTaken));
     }
@@ -90,53 +65,4 @@ function ComputerPlayer(board) {
       
     }
 }
-// console.log($(".cellBOne").slice(0,3));
-
-let firstRow =Array.from($(".cellBOne").slice(0,3));
-console.log(Array.from(firstRow));
-let firstRowString = "";
-firstRow.forEach((cell,i)=>{
-    console.log(i,cell.classList)
-    if (cell.classList[1]=== "circle")
-      firstRowString += ".";
-      if (cell.classList[1]=== "dash")
-      firstRowString += "_";
-})
-console.log(firstRowString);
-
-console.log(Object.keys(charCodes));
- let morseMatch = "";
- Object.keys(charCodes).forEach(mCodes =>{
-     console.log(charCodes[mCodes])
-     if (firstRowString === charCodes[mCodes])
-     morseMatch = mCodes
- })
-console.log(morseMatch);
-
-
-// function encode() {
-// document.morsecode.chars.value=document.morsecode.chars.value.toLowerCase();
-// document.morsecode.codebox.value="";
-// temp=''
-// var chars=document.morsecode.chars.value.split("");
-
-// for (a=0; a<chars.length; a++) {
-// if (chars[a]!=" ") {
-// if (window.charCodes[chars[a]]) {
-// document.morsecode.codebox.value+=charCodes[chars[a]]+"    ";
-// temp+=chars[a]+"="+charCodes[chars[a]]+"\n";
-// }
-// else
-// temp+=chars[a]+"=(None)\n";
-// }
-// else temp+="\n";
-// }
-// document.morsecode.codebox.value+="\n\n\nEXPLANATION:\n\n"+temp
-// }
-
-// // module.export= charCodes
-// module.export = {
-//     alphabetConversion : charCodes
-// }
-
-console.log ($(".circle"));
+console.log($(".cellBOne").slice(0,3));

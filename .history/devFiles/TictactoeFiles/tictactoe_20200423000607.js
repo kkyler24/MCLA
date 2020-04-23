@@ -91,7 +91,7 @@ function ComputerPlayer(board) {
     }
 }
 // console.log($(".cellBOne").slice(0,3));
-// the code below takes the first three cells from the array and testing to see if it is equal to the classes circle and dashes. 
+
 let firstRow =Array.from($(".cellBOne").slice(0,3));
 console.log(Array.from(firstRow));
 let firstRowString = "";
@@ -103,7 +103,7 @@ firstRow.forEach((cell,i)=>{
       firstRowString += "_";
 })
 console.log(firstRowString);
-//the below code takes the charcodes object array and matches it to key of the key value pairs of the object, and spits back the matching letter.  
+
 console.log(Object.keys(charCodes));
  let morseMatch = "";
  Object.keys(charCodes).forEach(mCodes =>{
@@ -112,5 +112,31 @@ console.log(Object.keys(charCodes));
      morseMatch = mCodes
  })
 console.log(morseMatch);
+
+
+// function encode() {
+// document.morsecode.chars.value=document.morsecode.chars.value.toLowerCase();
+// document.morsecode.codebox.value="";
+// temp=''
+// var chars=document.morsecode.chars.value.split("");
+
+// for (a=0; a<chars.length; a++) {
+// if (chars[a]!=" ") {
+// if (window.charCodes[chars[a]]) {
+// document.morsecode.codebox.value+=charCodes[chars[a]]+"    ";
+// temp+=chars[a]+"="+charCodes[chars[a]]+"\n";
+// }
+// else
+// temp+=chars[a]+"=(None)\n";
+// }
+// else temp+="\n";
+// }
+// document.morsecode.codebox.value+="\n\n\nEXPLANATION:\n\n"+temp
+// }
+
+// // module.export= charCodes
+// module.export = {
+//     alphabetConversion : charCodes
+// }
 
 console.log ($(".circle"));

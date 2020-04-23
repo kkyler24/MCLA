@@ -9,7 +9,6 @@ const ticTacToeGame = new TicTacToeGame();
 ticTacToeGame.start();
 
 
-
 // creates new game
 function TicTacToeGame() {
     const board = new Board();
@@ -17,7 +16,7 @@ function TicTacToeGame() {
     const computerPlayer = new ComputerPlayer(board);
     let turn = 0;
     this.start = function () {
-        // This sets up the functions of the board, players and turns.
+        // This sets up the functions of the baord, players and turns.
         // making sure you wathcing of there are any changes in position, because that woudl mean it is the next players turn. We do this by using a mutationObserver
         const config = { childList: true };
         const observer = new MutationObserver(() => takeTurn());
@@ -47,11 +46,10 @@ function Board() {
 
 function HumanPlayer(board) {
     this.takeTurn = function () {
-        board.positions.forEach(el =>addEventListener("click", huTurnTaken));
+        board.positions.forEach(el.on("click", huTurnTaken))
     }
-    // This part may be unnecessary. as you have circles and dashes set up in css. figure out how to get that here. maybe a var and save the style?
-    function huTurnTaken(event){
-        event.target.innertext="X";
+    function huTurnTaken(){
+        console.log("turn taken")
     }
 }
 

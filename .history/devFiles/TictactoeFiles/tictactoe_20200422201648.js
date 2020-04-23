@@ -9,7 +9,6 @@ const ticTacToeGame = new TicTacToeGame();
 ticTacToeGame.start();
 
 
-
 // creates new game
 function TicTacToeGame() {
     const board = new Board();
@@ -49,9 +48,8 @@ function HumanPlayer(board) {
     this.takeTurn = function () {
         board.positions.forEach(el =>addEventListener("click", huTurnTaken));
     }
-    // This part may be unnecessary. as you have circles and dashes set up in css. figure out how to get that here. maybe a var and save the style?
     function huTurnTaken(event){
-        event.target.innertext="X";
+        event.target.innertext= circle;
     }
 }
 

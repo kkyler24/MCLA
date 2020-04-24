@@ -92,7 +92,7 @@ body{
 }
 
 /* preventing hovering over cells that are already filled, how to get dash or circle shaped hovers */
-.cellBOne:hover{
+.cellBOne{
     background-color: rgb(174, 183, 192);
 }
 

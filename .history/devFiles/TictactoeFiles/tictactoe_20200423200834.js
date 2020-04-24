@@ -29,31 +29,30 @@ function TicTacToeGame() {
         //the above determines who turn it is. and tells the player pr computer to take their turn.  
     }
 }
-
+ 
 function Board() {
     this.positions = Array.from($(".cellBOne"));
     console.log(this.positions);
 }
 
-
 function HumanPlayer(board) {
     this.takeTurn = function () {
-        board.positions.forEach(el => el.addEventListener("click", huTurnTaken));
+        board.positions.forEach(el =>el.addEventListener("click", huTurnTaken));
     }
     // This part may be unnecessary. as you have circles and dashes set up in css. figure out how to get that here. maybe a var and save the style?
-    function huTurnTaken(event) {
-        event.target.innerText = "X";
+    function huTurnTaken(event){
+        event.target.innerText=".";
         board.positions
-            .forEach(el => el.removeEventListener("click", huTurnTaken));
+            .forEach(el =>el.removeEventListener("click", huTurnTaken));
     }
 }
 // creating a var of available positions, which will put it in an array, and  that will filter for out taken positions. 
 function ComputerPlayer(board) {
     this.takeTurn = function () {
-        //   const availablePositions = board.positions.filter((p)=>p.innerText === "");
-        //   console.log(availablePositions);
+      const availablePositions = Board.positions.filter((p)=> p.innerText === "");
+      console.log(availablePositions);
     }
-
+    
 }
 
 
@@ -61,25 +60,25 @@ function ComputerPlayer(board) {
 // Letter Conversion Therapy
 // console.log($(".cellBOne").slice(0,3));
 // the code below takes the first three cells from the array and testing to see if it is equal to the classes circle and dashes. 
-let firstRow = Array.from($(".cellBOne").slice(0, 3));
+let firstRow =Array.from($(".cellBOne").slice(0,3));
 console.log(Array.from(firstRow));
 let firstRowString = "";
-firstRow.forEach((cell, i) => {
-    console.log(i, cell.classList)
-    if (cell.classList[1] === "circle")
-        firstRowString += ".";
-    if (cell.classList[1] === "dash")
-        firstRowString += "_";
+firstRow.forEach((cell,i)=>{
+    console.log(i,cell.classList)
+    if (cell.classList[1]=== "circle")
+      firstRowString += ".";
+      if (cell.classList[1]=== "dash")
+      firstRowString += "_";
 })
 console.log(firstRowString);
 //the below code takes the charcodes object array and matches it to key of the key value pairs of the object, and spits back the matching letter.  
 console.log(Object.keys(charCodes));
-let morseMatch = "";
-Object.keys(charCodes).forEach(mCodes => {
-    console.log(charCodes[mCodes])
-    if (firstRowString === charCodes[mCodes])
-        morseMatch = mCodes
-})
+ let morseMatch = "";
+ Object.keys(charCodes).forEach(mCodes =>{
+     console.log(charCodes[mCodes])
+     if (firstRowString === charCodes[mCodes])
+     morseMatch = mCodes
+ })
 console.log(morseMatch);
 
-console.log($(".circle"));
+console.log ($(".circle"));

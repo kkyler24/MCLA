@@ -26,7 +26,7 @@ body{
     align-content: center;
     align-items: center;
     justify-items: center;
-    grid-template-columns: repeat(4,auto);
+    grid-template-columns: repeat(3,auto);
     /* this resizes the grid and makes all the cells automatically evenly sized */
 }
 .cellBOne{
@@ -38,6 +38,26 @@ body{
     align-items: center;
     position: relative;
     cursor: pointer;
+    
+}
+.cellBOne:first-child,
+.cellBOne:nth-child(2),
+.cellBOne:nth-child(3){
+    border-top: none;
+}
+
+.cellBOne:nth-child(3n+1){
+    border-left: none;
+}
+
+.cellBOne:nth-child(3n+3){
+    border-right: none;
+}
+
+.cellBOne:last-child,
+.cellBOne:nth-child(8),
+.cellBOne:nth-child(7){
+    border-bottom: none;
 }
 
 .cellBOne.dash::before{

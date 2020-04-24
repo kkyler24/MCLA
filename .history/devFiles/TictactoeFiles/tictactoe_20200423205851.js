@@ -1,7 +1,6 @@
 
 // random words should be put in here and converted to morse code. the computer should evaluate if your letter box matches the randomized word to win the round. 
 // };
-
 const ticTacToeGame = new TicTacToeGame();
 ticTacToeGame.start();
 
@@ -59,8 +58,6 @@ function ComputerPlayer(board) {
     }
 
 }
-// order computer to make letter that would form the given word, if can't then new board, then assign completed to player Letter box until filled. 
-// letter box sizes changes based on words. 
 
 
 
@@ -88,11 +85,4 @@ Object.keys(charCodes).forEach(mCodes => {
 })
 console.log(morseMatch);
 
-
-function klassCD(){
-  let cellBOnestyle = ($(".cellBOne"));
-    classList.toggle(".dash")
-    classList.toggle(".circle");
-}
-  
-
+console.log($(".circle"));

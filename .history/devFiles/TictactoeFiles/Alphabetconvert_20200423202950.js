@@ -30,7 +30,12 @@ charCodes["z"]="__..";
 
 
 
+// module.export= charCodes
+// module.export = {
+//     alphabetConversion : charCodes
+// }
 
+console.log ($(".circle"));
 
 // Tictactoe code
 // 1.	Create else if statement for alpha beta If "s"=== "s" Return (•••). 

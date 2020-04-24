@@ -1,7 +1,6 @@
 
 // random words should be put in here and converted to morse code. the computer should evaluate if your letter box matches the randomized word to win the round. 
 // };
-
 const ticTacToeGame = new TicTacToeGame();
 ticTacToeGame.start();
 
@@ -43,7 +42,7 @@ function HumanPlayer(board) {
     }
     // This part may be unnecessary. as you have circles and dashes set up in css. figure out how to get that here. maybe a var and save the style?
     function huTurnTaken(event) {
-        event.target.innerText = "circle";
+        event.target.innerText = "X";
         board.positions
             .forEach(el => el.removeEventListener("click", huTurnTaken));
     }
@@ -53,14 +52,9 @@ function ComputerPlayer(board) {
     this.takeTurn = function () {
           const availablePositions = board.positions.filter((p)=>p.innerText === "");
           console.log(availablePositions);
-        //   this allows the computer to choose a random position from the available positions
-          const move = Math.floor(Math.random()*availablePositions.length);
-          availablePositions[move].innerText ="dash";
     }
 
 }
-// order computer to make letter that would form the given word, if can't then new board, then assign completed to player Letter box until filled. 
-// letter box sizes changes based on words. 
 
 
 
@@ -88,11 +82,4 @@ Object.keys(charCodes).forEach(mCodes => {
 })
 console.log(morseMatch);
 
-
-function klassCD(){
-  let cellBOnestyle = ($(".cellBOne"));
-    classList.toggle(".dash")
-    classList.toggle(".circle");
-}
-  
-
+console.log($(".circle"));

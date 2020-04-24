@@ -59,8 +59,6 @@ function ComputerPlayer(board) {
     }
 
 }
-// order computer to make letter that would form the given word, if can't then new board, then assign completed to player Letter box until filled. 
-// letter box sizes changes based on words. 
 
 
 

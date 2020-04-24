@@ -38,6 +38,7 @@ body{
     align-items: center;
     position: relative;
     cursor: pointer;
+    
 }
 
 .cellBOne.dash::before{

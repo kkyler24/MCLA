@@ -14,14 +14,13 @@ function TicTacToeGame() {
     this.start = function () {
         // This sets up the functions of the board, players and turns.
         // making sure you wathcing of there are any changes in position, because that woudl mean it is the next players turn. We do this by using a mutationObserver
-        const config = { childList: true, attributeFilter:["class"]};
+        const config = { childList: true };
         const observer = new MutationObserver(() => takeTurn());
         // now adding the observer to the board.positions so it can run through each (for each function) one to check for mutations. if there are mutations, then we call the take turn function. 
         board.positions.forEach((el) => observer.observe(el, config));
         takeTurn();
     }
     function takeTurn() {
-        console.log("turn", turn);
         if (turn % 2 === 0) {
             humanPlayer.takeTurn();
         } else {
@@ -43,18 +42,8 @@ function HumanPlayer(board) {
         board.positions.forEach(el => el.addEventListener("click", huTurnTaken));
     }
     // This part may be unnecessary. as you have circles and dashes set up in css. figure out how to get that here. maybe a var and save the style?
-    let classOptions = [
-        "circle",
-        "dash",
-        "Square"
-    ];
-
-    let optionPicker = Math.floor(Math.random() * classOptions.length);
-    console.log(optionPicker);
-    let O = classOptions[optionPicker];
-
     function huTurnTaken(event) {
-        event.target.classList.add(O);
+        event.target.innerText = "circle";
         board.positions
             .forEach(el => el.removeEventListener("click", huTurnTaken));
     }
@@ -62,39 +51,23 @@ function HumanPlayer(board) {
 // creating a var of available positions, which will put it in an array, and  that will filter for out taken positions. 
 function ComputerPlayer(board) {
     this.takeTurn = function () {
-        const availablePositions = board.positions.filter((p) => {
-            console.log(p.classList.contains('circle'))
-            console.log(p)
-            // p.classList.contains("circle")
-            if (p.classList.contains('circle')) {
-                return false
-            } else if (p.classList.contains('dash')) {
-                return false
-            } else if( p.classList.contains('Square')) {
-                return false
-            }
-            return true
-        });
-        console.log(availablePositions);
+          const availablePositions = board.positions.filter((p)=>p.innerText === "");
+          console.log(availablePositions);
         //   this allows the computer to choose a random position from the available positions
-        let classOptions = [
+      let classOptions=[
             "circle",
             "dash",
             "Square"
         ];
-
-        let optionPicker = Math.floor(Math.random() * classOptions.length);
+        let optionPicker = Math.floor(Math.random()*classOptions.length);
         console.log(optionPicker);
-        let x = classOptions[optionPicker];
 
-        const move = Math.floor(Math.random() * availablePositions.length);
-        console.log('move: ', move)
-        console.log(availablePositions)
-        availablePositions[move].classList.add(x);
+          const move = Math.floor(Math.random()*availablePositions.length);
+          availablePositions[move].classList.add(".dash");
 
-
+         
     }
-    // 
+
 }
 // make computer randomly choose between, rows, column, or diagonal that are directtly adjacent to its own cell. 
 // order computer to make letter that would form the given word, if can't then new board, then assign completed to player Letter box until filled. 
@@ -132,5 +105,5 @@ console.log(morseMatch);
 //     classList.toggle(".dash")
 //     classList.toggle(".circle");
 // }
-
+  
 

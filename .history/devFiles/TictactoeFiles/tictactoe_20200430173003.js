@@ -14,14 +14,13 @@ function TicTacToeGame() {
     this.start = function () {
         // This sets up the functions of the board, players and turns.
         // making sure you wathcing of there are any changes in position, because that woudl mean it is the next players turn. We do this by using a mutationObserver
-        const config = { childList: true, attributeFilter:["class"]};
+        const config = { childList: true };
         const observer = new MutationObserver(() => takeTurn());
         // now adding the observer to the board.positions so it can run through each (for each function) one to check for mutations. if there are mutations, then we call the take turn function. 
         board.positions.forEach((el) => observer.observe(el, config));
         takeTurn();
     }
     function takeTurn() {
-        console.log("turn", turn);
         if (turn % 2 === 0) {
             humanPlayer.takeTurn();
         } else {
@@ -54,7 +53,7 @@ function HumanPlayer(board) {
     let O = classOptions[optionPicker];
 
     function huTurnTaken(event) {
-        event.target.classList.add(O);
+        event.target.classList.add("circle");
         board.positions
             .forEach(el => el.removeEventListener("click", huTurnTaken));
     }

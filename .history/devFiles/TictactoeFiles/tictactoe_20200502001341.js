@@ -64,8 +64,8 @@ function ComputerPlayer(board) {
     this.takeTurn = function () {
         const availablePositions = board.positions.filter((p) => {
             console.log(p.classList.contains('circle'))
-        //     console.log(p)
-            p.classList.contains("circle")
+            console.log(p)
+            // p.classList.contains("circle")
             if (p.classList.contains('circle')) {
                 return false
             } else if (p.classList.contains('dash')) {

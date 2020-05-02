@@ -66,14 +66,14 @@ function ComputerPlayer(board) {
             console.log(p.classList.contains('circle'))
         //     console.log(p)
             p.classList.contains("circle")
-            if (p.classList.contains('circle')) {
-                return false
-            } else if (p.classList.contains('dash')) {
-                return false
-            } else if( p.classList.contains('Square')) {
-                return false
-            }
-            return true
+        //     if (p.classList.contains('circle')) {
+        //         return false
+        //     } else if (p.classList.contains('dash')) {
+        //         return false
+        //     } else if( p.classList.contains('Square')) {
+        //         return false
+        //     }
+        //     return true
         });
         // console.log(availablePositions);
         //   this allows the computer to choose a random position from the available positions

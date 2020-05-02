@@ -67,16 +67,16 @@ body{
     
 }
 
-.cellBOne.Square::before{
+cellBOne.Square::before{
     content: "";
     position: absolute;
-    width: calc(var(--mark-size)*1);
+    width: calc(var(--mark-size)*1.2);
     /* controls the height of the cricles */
     /* transform: rotate(90deg); */
-    height: calc(var(--mark-size)*1.1);
-    background-color: rgb(22, 155, 172);
+    height: calc(var(--mark-size)*1);
+    background-color: rgb(8, 8, 8);
     /* controls how the circle looks */
-    border-radius: 20%;
+    border-radius: 0%;
    
     
 }

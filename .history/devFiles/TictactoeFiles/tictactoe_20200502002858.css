@@ -73,10 +73,10 @@ body{
     width: calc(var(--mark-size)*1);
     /* controls the height of the cricles */
     /* transform: rotate(90deg); */
-    height: calc(var(--mark-size)*1.1);
-    background-color: rgb(22, 155, 172);
+    height: calc(var(--mark-size)*1);
+    background-color: rgb(172, 22, 22);
     /* controls how the circle looks */
-    border-radius: 20%;
+    border-radius: 45%;
    
     
 }

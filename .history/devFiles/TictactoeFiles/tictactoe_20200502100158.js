@@ -2,14 +2,8 @@
 // random words should be put in here and converted to morse code. the computer should evaluate if your letter box matches the randomized word to win the round. 
 // };
 let selectedOption = "circle";
-$("#squareButton").click(function (event) {
+$("#squareButton").click(function(event){
     selectedOption = "square";
-});
-$("#circleButton").click(function (event) {
-    selectedOption = "circle";
-});
-$("#dashButton").click(function (event) {
-    selectedOption = "dash";
 });
 
 const ticTacToeGame = new TicTacToeGame();
@@ -24,7 +18,7 @@ function TicTacToeGame() {
     this.start = function () {
         // This sets up the functions of the board, players and turns.
         // making sure you wathcing of there are any changes in position, because that woudl mean it is the next players turn. We do this by using a mutationObserver
-        const config = { childList: true, attributeFilter: ["class"] };
+        const config = { childList: true, attributeFilter:["class"]};
         const observer = new MutationObserver(() => takeTurn());
         // now adding the observer to the board.positions so it can run through each (for each function) one to check for mutations. if there are mutations, then we call the take turn function. 
         board.positions.forEach((el) => observer.observe(el, config));
@@ -52,6 +46,17 @@ function HumanPlayer(board) {
     this.takeTurn = function () {
         board.positions.forEach(el => el.addEventListener("click", huTurnTaken));
     }
+    // This part may be unnecessary. as you have circles and dashes set up in css. figure out how to get that here. maybe a var and save the style?
+    let classOptions = [
+        "circle",
+        "dash",
+        "square"
+    ];
+
+    let optionPicker = Math.floor(Math.random() * classOptions.length);
+    console.log(optionPicker);
+    // let O = classOptions[optionPicker];
+
 
     function huTurnTaken(event) {
         event.target.classList.add(selectedOption);
@@ -64,17 +69,18 @@ function ComputerPlayer(board) {
     this.takeTurn = function () {
         const availablePositions = board.positions.filter((p) => {
             console.log(p.classList.contains('circle'))
-
+        //     console.log(p)
             p.classList.contains("circle")
             if (p.classList.contains('circle')) {
                 return false
             } else if (p.classList.contains('dash')) {
                 return false
-            } else if (p.classList.contains('Square')) {
+            } else if( p.classList.contains('Square')) {
                 return false
             }
             return true
         });
+        // console.log(availablePositions);
         //   this allows the computer to choose a random position from the available positions
         let classOptions = [
             "circle",
@@ -87,6 +93,8 @@ function ComputerPlayer(board) {
         let x = classOptions[optionPicker];
 
         const move = Math.floor(Math.random() * availablePositions.length);
+        // console.log('move: ', move)
+        // console.log(availablePositions)
         availablePositions[move].classList.add(x);
 
 
@@ -111,7 +119,7 @@ firstRow.forEach((cell, i) => {
         firstRowString += ".";
     if (cell.classList[1] === "dash")
         firstRowString += "_";
-    if (cell.classList[1] === "square")
+        if (cell.classList[1] === "square")
         firstRowString += " ";
 })
 console.log(firstRowString);
@@ -126,6 +134,10 @@ Object.keys(charCodes).forEach(mCodes => {
 console.log(morseMatch);
 
 
-//
+// function klassCD(){
+//   let cellBOnestyle = ($(".cellBOne"));
+//     classList.toggle(".dash")
+//     classList.toggle(".circle");
+// }
 
 

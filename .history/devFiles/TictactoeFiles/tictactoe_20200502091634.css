@@ -82,8 +82,7 @@ body{
 }
 
 .cellBOne.circle,
-.cellBOne.dash,
-.cellBOne.square{
+.cellBOne.dash{
     cursor: not-allowed;
    
 }

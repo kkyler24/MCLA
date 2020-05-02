@@ -82,8 +82,7 @@ body{
 }
 
 .cellBOne.circle,
-.cellBOne.dash,
-.cellBOne.square{
+.cellBOne.dash{
     cursor: not-allowed;
    
 }
@@ -93,8 +92,4 @@ body{
     background-color: rgb(174, 183, 192);
 }
 
-#buttonChoice{
-    height: 200px;
-    width: fit-content;
-    position: relative;
-}
+

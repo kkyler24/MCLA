@@ -52,6 +52,17 @@ function HumanPlayer(board) {
     this.takeTurn = function () {
         board.positions.forEach(el => el.addEventListener("click", huTurnTaken));
     }
+    // This part may be unnecessary. as you have circles and dashes set up in css. figure out how to get that here. maybe a var and save the style?
+    let classOptions = [
+        "circle",
+        "dash",
+        "square"
+    ];
+
+    // let optionPicker = Math.floor(Math.random() * classOptions.length);
+    // console.log(optionPicker);
+    // let O = classOptions[optionPicker];
+
 
     function huTurnTaken(event) {
         event.target.classList.add(selectedOption);
@@ -64,7 +75,7 @@ function ComputerPlayer(board) {
     this.takeTurn = function () {
         const availablePositions = board.positions.filter((p) => {
             console.log(p.classList.contains('circle'))
-
+            //     console.log(p)
             p.classList.contains("circle")
             if (p.classList.contains('circle')) {
                 return false

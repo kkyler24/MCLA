@@ -46,7 +46,10 @@ function Board() {
     this.positions = Array.from($(".cellBOne"));
     // console.log(this.positions);
 }
-// 
+// controlling the baord
+//   restrict application of double or triple classes, 
+// if cellBOne 
+
 
 
 
@@ -55,14 +58,10 @@ function HumanPlayer(board) {
     this.takeTurn = function () {
         board.positions.forEach(el => el.addEventListener("click", huTurnTaken));
     }
-    
 
     function huTurnTaken(event) {
         // When selected Option is in the cell restrict another class being applied, when cell is empty only one class can be applied if cellBone
         console.log(event.target.classList);
-       classList.forEach(classname=>{
-console.log("classname");
-        })
         event.target.classList.add(selectedOption);
         board.positions
             .forEach(el => el.removeEventListener("click", huTurnTaken));

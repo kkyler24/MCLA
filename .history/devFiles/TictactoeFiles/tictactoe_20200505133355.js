@@ -48,7 +48,9 @@ function Board() {
 }
 
 
-
+// basically you wanna check if the classname for circle, dash, or square appear in the class list
+// if they do then you do NOT want to add to the classlist which is happening by default right now
+// which means if they appear in the classlist array return from the huTurnTaken function there which will prevent the adding to the classlist from happening
 
 
 function HumanPlayer(board) {
@@ -128,7 +130,7 @@ firstRow.forEach((cell, i) => {
     if (cell.classList[1] === "dash")
         firstRowString += "_";
     if (cell.classList[1] === "square")
-        firstRowString += "X";
+        firstRowString += " ";
 })
 console.log(firstRowString);
 //the below code takes the charcodes object array and matches it to key of the key value pairs of the object, and spits back the matching letter.  

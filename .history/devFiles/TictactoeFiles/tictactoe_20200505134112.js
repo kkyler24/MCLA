@@ -128,7 +128,7 @@ firstRow.forEach((cell, i) => {
     if (cell.classList[1] === "dash")
         firstRowString += "_";
     if (cell.classList[1] === "square")
-        firstRowString += "X";
+        firstRowString += " ";
 })
 console.log(firstRowString);
 //the below code takes the charcodes object array and matches it to key of the key value pairs of the object, and spits back the matching letter.  

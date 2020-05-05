@@ -46,9 +46,11 @@ function Board() {
     this.positions = Array.from($(".cellBOne"));
     // console.log(this.positions);
 }
+// 
 
-
-
+// basically you wanna check if the classname for circle, dash, or square appear in the class list
+// if they do then you do NOT want to add to the classlist which is happening by default right now
+// which means if they appear in the classlist array return from the huTurnTaken function there which will prevent the adding to the classlist from happening
 
 
 function HumanPlayer(board) {
@@ -58,21 +60,14 @@ function HumanPlayer(board) {
     
 
     function huTurnTaken(event) {
-        let isClicked = false;
         // When selected Option is in the cell restrict another class being applied, when cell is empty only one class can be applied if cellBone
         console.log(event.target.classList);
        event.target.classList.forEach(classname=>{
-console.log(classname); 
-        if (classname === "circle" || classname === "dash" ||classname === "square"){
-            isClicked = true;
-        }
+console.log("classname");
         })
-        if (!isClicked){
-            event.target.classList.add(selectedOption);
+        event.target.classList.add(selectedOption);
         board.positions
             .forEach(el => el.removeEventListener("click", huTurnTaken));
-        }
-        
     }
 }
 // creating a var of available positions, which will put it in an array, and  that will filter for out taken positions. 
@@ -128,7 +123,7 @@ firstRow.forEach((cell, i) => {
     if (cell.classList[1] === "dash")
         firstRowString += "_";
     if (cell.classList[1] === "square")
-        firstRowString += "X";
+        firstRowString += " ";
 })
 console.log(firstRowString);
 //the below code takes the charcodes object array and matches it to key of the key value pairs of the object, and spits back the matching letter.  

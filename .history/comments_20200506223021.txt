@@ -5,8 +5,9 @@
 
 
  use jquery to take that word and place on the page
-https://opendyslexic.org/
-    toggle font for dyslexic students. 
+
+
+ 
 
 
  Tictactoe code

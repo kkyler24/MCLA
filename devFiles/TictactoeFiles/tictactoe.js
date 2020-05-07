@@ -1,4 +1,6 @@
-
+// let matchFound = str.strike(){
+// if 
+// }
 // random words should be put in here and converted to morse code. the computer should evaluate if your letter box matches the randomized word to win the round. 
 // };
 let selectedOption = "circle";

@@ -1,54 +1,53 @@
-
-var charCodes= {};
-charCodes["a"]="._XX";
-charCodes["b"]="_...";
-charCodes["c"]="_._.";
-charCodes["d"]="_..X";
-charCodes["e"]=".XXX";
-charCodes["f"]=".._.";
-charCodes["g"]="__.X";
-charCodes["h"]="....";
-charCodes["i"]="..XX";
-charCodes["j"]=".___";
-charCodes["k"]="_._X";
-charCodes["l"]="._..";
-charCodes["m"]="__XX";
-charCodes["n"]="_.XX";
-charCodes["o"]="___X";
-charCodes["p"]=".__.";
-charCodes["q"]="__._";
-charCodes["r"]="._.X";
-charCodes["s"]="...X";
-charCodes["t"]="_XXX";
-charCodes["u"]=".._X";
-charCodes["v"]="..._";
-charCodes["w"]=".__X";
-charCodes["x"]="_.._";
-charCodes["y"]="_.__";
-charCodes["z"]="__..";
+var charCodes = {};
+charCodes["a"] = "._XX";
+charCodes["b"] = "_...";
+charCodes["c"] = "_._.";
+charCodes["d"] = "_..X";
+charCodes["e"] = ".XXX";
+charCodes["f"] = ".._.";
+charCodes["g"] = "__.X";
+charCodes["h"] = "....";
+charCodes["i"] = "..XX";
+charCodes["j"] = ".___";
+charCodes["k"] = "_._X";
+charCodes["l"] = "._..";
+charCodes["m"] = "__XX";
+charCodes["n"] = "_.XX";
+charCodes["o"] = "___X";
+charCodes["p"] = ".__.";
+charCodes["q"] = "__._";
+charCodes["r"] = "._.X";
+charCodes["s"] = "...X";
+charCodes["t"] = "_XXX";
+charCodes["u"] = ".._X";
+charCodes["v"] = "..._";
+charCodes["w"] = ".__X";
+charCodes["x"] = "_.._";
+charCodes["y"] = "_.__";
+charCodes["z"] = "__..";
 
 // second grade sight words
-let secondGradeSW =[
-    "call",	
+let secondGradeSW = [
+    "call",
     "sit",
-    "cold",	
+    "cold",
     "sleep",
-    "does",	
+    "does",
     "tell",
-    "buy",	
+    "buy",
     "best",
     "because",
-    "don’t", 	
+    "don’t",
     "their",
     "fast",
     "these",
-    "first",	
+    "first",
     "those",
-    "five",	
+    "five",
     "upon",
-    "found",	
+    "found",
     "us"
-     
+
 ];
 
 
@@ -102,3 +101,34 @@ let secondGradeSW =[
 // 	display their value to computer as morse coded word. 
 // Random  words selectors and display
 // 	Maybe create an array of 1st and 2nd grade site words. 
+
+
+// //TODO
+// * Must use a Node and Express server : DONE
+
+//
+
+// * Must be backed by a MySQL database and an ORM (not necessarily Sequelize)
+// NEEDS REVIEW... SQL Database will be list of words etc 
+
+// * Must utilize both GET and POST routes for retrieving and adding new data
+// GET Words POST scores
+
+// * Must be deployed using Heroku (with data)
+// Disreagard
+
+// * Must utilize at least one new third-party API
+// REVIEW... Unity
+
+// * Must have a polished UI
+
+// * Must use a CSS framework _other than_ Bootstrap
+// Materialize 
+
+// * Must follow MVC paradigm
+// Will use handle bars to render user profile pages? game pages? user validation?
+
+// * Must meet good quality coding standards (indentation, scoping, naming)
+// Will let Linter handle... Semantic tags 
+
+// * Must use Handlebars.js

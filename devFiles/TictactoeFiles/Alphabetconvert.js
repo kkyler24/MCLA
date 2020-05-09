@@ -27,28 +27,28 @@ charCodes["y"] = "_.__";
 charCodes["z"] = "__..";
 
 // second grade sight words
-let secondGradeSW = [
-    "call",
-    "sit",
-    "cold",
-    "sleep",
-    "does",
-    "tell",
-    "buy",
-    "best",
-    "because",
-    "don’t",
-    "their",
-    "fast",
-    "these",
-    "first",
-    "those",
-    "five",
-    "upon",
-    "found",
-    "us"
+// let secondGradeSW = [
+//     "call",
+//     "sit",
+//     "cold",
+//     "sleep",
+//     "does",
+//     "tell",
+//     "buy",
+//     "best",
+//     "because",
+//     "don’t",
+//     "their",
+//     "fast",
+//     "these",
+//     "first",
+//     "those",
+//     "five",
+//     "upon",
+//     "found",
+//     "us"
 
-];
+// ];
 
 
 // randomly pick a word with js

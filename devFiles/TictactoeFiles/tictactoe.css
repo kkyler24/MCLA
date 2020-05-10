@@ -16,6 +16,7 @@ h1{
 
 body{
     margin:0;
+    
 }
 
 .BoardOne{
@@ -109,5 +110,7 @@ body{
 }
 
 .displayBox{
-    
+   border-width: medium; 
+   border-color:black ;
+   
 }

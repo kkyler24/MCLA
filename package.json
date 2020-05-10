@@ -26,6 +26,8 @@
     },
     "homepage": "https://github.com/kkyler24/MCLA",
     "dependencies": {
+        "materialize-css": "^1.0.0-rc.2",
+        "morse-code-converter": "^1.0.2",
         "morsee": "^1.0.6",
         "nodemon": "^2.0.3",
         "require": "^2.4.20"

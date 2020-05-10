@@ -19,14 +19,20 @@
 
 <body>
     <sectionOne>
-        <!-- NavBar -->
-        <!-- <nav class="navbar navbar-light bg-light">
+        <nav class="navbar navbar-light bg-light">
             <!-- Image Logo -->
-        <!-- <a class="navbar-brand" href="#">
-                <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30"
-                    class="d-inline-block align-top" alt="">
-                Bootstrap -->
-        <!-- </a> -->
+              <a class="navbar-brand" href="#">
+                <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                Bootstrap
+              </a>
+              <!-- end of logo -->
+              <div class="navbuttons">
+                <button id="gamesBtn" type="button" class="btn btn-danger navbuttons">Games</button>
+                <button id="videoBtn" type="button" class="btn btn-info navbuttons">Video</button>
+                <button id="coloringBookBtn" type="button" class="btn btn-warning navbuttons">Coloring Book</button>
+                <button id="grownUpBtn" type="button" class="btn btn-success navbuttons">Grown ups</button>
+                </div>
+            </nav>
         </nav>
     </sectionOne>
    
@@ -34,7 +40,7 @@
     <sectionTwo>
         <div class="backR">
         <h1>Tic Tac Toe</h1>
-        <div class="displayBox"><span> </span></div>
+        <div><span id="displayBox"> </span></div>
         <div class="BoardOne" id="BoardOne">
             <div class="cellBOne circle" data-cell></div>
             <div class="cellBOne circle" data-cell></div>

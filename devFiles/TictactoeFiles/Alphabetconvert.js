@@ -1,4 +1,5 @@
-
+ 
+// const text = morse.morseToText(code); // HEY HOW ARE YOU?
 
 const charCodes = {};
 charCodes["a"] = "._XX";
@@ -51,25 +52,29 @@ let secondGradeSW = [
     "us"
 
 ];
+// // choose random word from array then split it
+let splicer = secondGradeSW[Math.floor(Math.random()*secondGradeSW.length)].split("");
+let splitWord = console.log(splicer);
 
-// choose random word from array
-let splicer = secondGradeSW[Math.floor(Math.random()*secondGradeSW.length)];
-let newWord= console.log(splicer);
-// let splicerTwo = secondGradeSW.indexOf("")
 
-// removes word from array when it has been chosen
+// removes word from array when it has been chosen, so there is no repeat
 const index = secondGradeSW.indexOf(splicer);
  if (index > -1) {secondGradeSW.splice(index, 1);
 console.log(secondGradeSW);
  }
 
+//  let newWord = splicer;
+// Object.values(charCodes).forEach(mCodes => {
+//     if (splicer === charCodes[mCodes])
+//          newWord = mCodes
+// })
+$.each(charCodes, function(key, value){
+  if (splitWord === charCodes[values])
+      return(charCodes[values]);
+})
+$("#displayBox").val(splitWord);
 
 
-
-// use jquery to take that word and place on the page
-
-
-// 
 // gave	use
 // goes	very
 // green	wash

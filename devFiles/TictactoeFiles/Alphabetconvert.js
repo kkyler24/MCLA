@@ -55,7 +55,7 @@ let secondGradeSW = [
 // // choose random word from array then split it
 let splicer = secondGradeSW[Math.floor(Math.random()*secondGradeSW.length)].split("");
 let splitWord = console.log(splicer);
-$("#displayBox").val(splitWord); 
+
 
 // removes word from array when it has been chosen, so there is no repeat
 const index = secondGradeSW.indexOf(splicer);
@@ -63,21 +63,18 @@ const index = secondGradeSW.indexOf(splicer);
 console.log(secondGradeSW);
  }
 
- 
-
-// split letters ito characters them convert them and display 
-
-  // let randomStr =  newWord.split("");
-  // console.log(randomStr);
-  // let splitWord = randomStr.split("");
-  // 
-  // let morsedWord = splitWord.encode;
-  // 
-
-
+//  let newWord = splicer;
+// Object.values(charCodes).forEach(mCodes => {
+//     if (splicer === charCodes[mCodes])
+//          newWord = mCodes
+// })
+$.each(charCodes, function(key, value){
+  if (splitWord === charCodes[values])
+      return(charCodes[values]);
+})
+$("#displayBox").val(splitWord);
 
 
-// 
 // gave	use
 // goes	very
 // green	wash

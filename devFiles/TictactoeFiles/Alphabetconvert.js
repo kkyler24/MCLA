@@ -64,11 +64,6 @@ console.log(secondGradeSW);
 xmorse.decode(index);
 //  secondGradeSW.splice(0,1)
 
-// randomly pick a word with js
-// convert word to morse
-// target and element with jquery (id or class of where you expect the word to show)
-// update element with new word
-
 
 // use jquery to take that word and place on the page
 

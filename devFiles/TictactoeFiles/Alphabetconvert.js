@@ -1,6 +1,6 @@
-// const { encode, decode } = require('morsee');
 
-var charCodes = {};
+
+const charCodes = {};
 charCodes["a"] = "._XX";
 charCodes["b"] = "_...";
 charCodes["c"] = "_._.";
@@ -52,17 +52,18 @@ let secondGradeSW = [
 
 ];
 
+// choose random word from array
 let splicer = secondGradeSW[Math.floor(Math.random()*secondGradeSW.length)];
-console.log(splicer);
+let newWord= console.log(splicer);
 // let splicerTwo = secondGradeSW.indexOf("")
 
+// removes word from array when it has been chosen
 const index = secondGradeSW.indexOf(splicer);
-if (index > -1) {
-  secondGradeSW.splice(index, 1);
-}
+ if (index > -1) {secondGradeSW.splice(index, 1);
 console.log(secondGradeSW);
-xmorse.decode(index);
-//  secondGradeSW.splice(0,1)
+ }
+
+
 
 
 // use jquery to take that word and place on the page
@@ -83,5 +84,4 @@ xmorse.decode(index);
 // your      
 // off                     	been
 // both	before
-
 

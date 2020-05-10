@@ -19,13 +19,6 @@ body{
     
 }
 
-.backR{
-   background-image: url("assets/pictures/forest.jpg");
-   background-repeat: no-repeat;
-   background-size: cover;
-   
-}
-
 .BoardOne{
     width: 100vw;
     height: 50vh;

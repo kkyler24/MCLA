@@ -17,12 +17,12 @@ h1{
 body{
     margin:0;
     
-    
 }
-#backR{
-    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/49065926200409.563534c34b140.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+
+.backR{
+   background-image: url("assets/pictures/forest.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
    
 }
 

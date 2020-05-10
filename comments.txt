@@ -12,9 +12,11 @@ https://opendyslexic.org/
  Tictactoe code
  1.	Create else if statement for alpha beta If "s"=== "s" Return (•••). (DONE) 
  Create object where key value pairs are the alphabet  and its key value pair is morseCode (DONE) 
- 2. create var wordDisplayBox = "".split(""); this whould split the word into an array of letter, then write additional function or use morsee where those letter are converted into morse code and displayed on the screen. 
- 3. once diplayed on screen computer must watch BoardOne for any matches using const regex = /[A-Z]/g; const found = paragraph.match(regex); method from the baord to the wordDisplayBox array. 
- 4. once computer finds one match with the same colors, it will apply the str.srtike() method, name the letter, give it to winning player and reset the baord.
+ 2. create var wordDisplayBox = "".split(""); this whould split the word into an array of letter,(DONE)
+ 
+  3.then write additional function or use morsee where those letter are converted into morse code and displayed on the screen. 
+ 4. once diplayed on screen computer must watch BoardOne for any matches using const regex = /[A-Z]/g; const found = paragraph.match(regex); method from the baord to the wordDisplayBox array. 
+ 5. once computer finds one match with the same colors, it will apply the str.srtike() method, name the letter, give it to winning player and reset the baord.
 
 
  Board adjustments 

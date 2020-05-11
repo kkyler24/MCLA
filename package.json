@@ -5,7 +5,7 @@
     "main": "Home.js",
     "scripts": {
         "start": "node server.js",
-        "lint": "eslint **/*.js --quiet",
+        "lint": "eslint \"**/*.js\"",
         "test": "npm run lint"
     },
     "repository": {

@@ -94,8 +94,8 @@ console.log(splitArray);
 
 
 let wordMatch = alpahbetCode.filter((obj)=>{
-    if (alpahbetCode.letter === splitArray){
-        retun (alpahbetCode.mCode);
+    if (obj.letter === splitArray){
+        retun (obj.mCode);
        
     }
    

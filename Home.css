@@ -16,6 +16,12 @@ main {
     font-size: 25;
 }
 
+.links {
+    font-family: 'Amatic SC', cursive;
+    font-weight: bolder;
+    font-size: 45px;
+}
+
 #text {
     max-height: 64px;
     padding-left: 10px;

@@ -101,6 +101,8 @@ body{
     height:fit-content;
     width: fit-content;
     position: relative;
+    margin: auto;
+    justify-content: space-evenly;
 }
 
 #circleButton,

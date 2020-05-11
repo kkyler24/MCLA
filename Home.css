@@ -1,13 +1,22 @@
-
-
-body{
+body {
     background-image: url("https://images.unsplash.com/photo-1471882243907-ba1cf91b79ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2301&q=80");
     background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
-#ourMotto{
+main {
+    padding-top: 10vh;
+}
+
+#ourMotto {
     font-family: 'Amatic SC', cursive;
     float: left;
     font-weight: bolder;
+    font-size: 25;
+}
+
+#text {
+    max-height: 64px;
+    padding-left: 10px;
 }

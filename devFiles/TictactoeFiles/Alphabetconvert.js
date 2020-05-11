@@ -1,4 +1,4 @@
- 
+//  let programMorse = require("morsee");
 // const text = morse.morseToText(code); // HEY HOW ARE YOU?
 
 const charCodes = {};
@@ -9,7 +9,7 @@ charCodes["d"] = "_..X";
 charCodes["e"] = ".XXX";
 charCodes["f"] = ".._.";
 charCodes["g"] = "__.X";
-charCodes["h"] = "....";
+charCodes["h"] = "....";    
 charCodes["i"] = "..XX";
 charCodes["j"] = ".___";
 charCodes["k"] = "_._X";
@@ -69,7 +69,7 @@ console.log(secondGradeSW);
 //          newWord = mCodes
 // })
 $.each(charCodes, function(key, value){
-  if (splitWord === charCodes[values])
+    if (splitWord === charCodes[keys])
       return(charCodes[values]);
 })
 $("#displayBox").val(splitWord);

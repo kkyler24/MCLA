@@ -28,34 +28,34 @@ charCodes["x"] = "_.._";
 charCodes["y"] = "_.__";
 charCodes["z"] = "__..";
 
-const alpahbetCode= [
-    {letter: "a", mCode: ".-XX"},
-    {letter: "b", mCode: "_..."},
-    {letter: "c", mCode: "_._."},
-    {letter: "d", mCode: "_..X"},
-    {letter: "e", mCode: ".XXX"},
-    {letter: "f", mCode: ".._."},
-    {letter: "g", mCode: "__.X"},
-    {letter: "h", mCode: "...."},
-    {letter: "i", mCode: "..XX"},
-    {letter: "j", mCode: ".___"},
-    {letter: "k", mCode: "_._X"},
-    {letter: "l", mCode: "._.."},
-    {letter: "m", mCode: "__XX"},
-    {letter: "n", mCode: "_.XX"},
-    {letter: "o", mCode: "___X"},
-    {letter: "p", mCode: ".__."},
-    {letter: "q", mCode: "__._"},
-    {letter: "r", mCode: "._.X"},
-    {letter: "s", mCode: "...X"},
-    {letter: "t", mCode: "_XXX"},
-    {letter: "u", mCode: ".._X"},
-    {letter: "v", mCode: "..._"},
-    {letter: "w", mCode: ".__X"},
-    {letter: "x", mCode: "_.._"},
-    {letter: "y", mCode: "_.__"},
-    {letter: "z", mCode: "__.."},
-]  
+const alpahbetCode= 
+    {"a" : ".-XX",
+     "b" : "_...",
+     "c" : "_._.",
+     "d" : "_..X",
+     "e" : ".XXX",
+     "f" : ".._.",
+     "g" : "__.X",
+     "h" : "....",
+     "i" : "..XX",
+     "j" : ".___",
+     "k" : "_._X",
+     "l" : "._..",
+     "m" : "__XX",
+     "n" : "_.XX",
+     "o" : "___X",
+     "p" : ".__.",
+     "q" : "__._",
+     "r" : "._.X",
+     "s" : "...X",
+     "t" : "_XXX",
+     "u" : ".._X",
+     "v" : "..._",
+     "w" : ".__X",
+     "x" : "_.._",
+     "y" : "_.__",
+     "z" : "__..",
+} 
 
 // second grade sight words
 let secondGradeSW = [
@@ -93,20 +93,14 @@ splicer.map((item) => splitArray.push(item));
 console.log(splitArray);
 
 
-let wordMatch = alpahbetCode.filter((obj)=>{
-    if (obj.letter === splitArray){
-        retun (obj.mCode);
-       
-    }
-   
-})
+let wordMatch = splitArray.map((obj)=> alpahbetCode[obj]);
 console.log(wordMatch);
 // removes word from array when it has been chosen, so there is no repeat
 const index = secondGradeSW.indexOf(splicer);
  if (index > -1) {secondGradeSW.splice(index, 1);
 console.log(secondGradeSW);
  }
-
+//  $("#displayBox").;
 //  let newWord = splicer;
 // Object.values(charCodes).forEach(mCodes => {
 //     if (splicer === charCodes[mCodes])
@@ -116,7 +110,7 @@ $.each(charCodes, function(keys, values){
     if (splitWord === alpahbetCode[keys])
       return(alpahbetCode[values]);
 })
-// $("#displayBox").val(splitWord);
+
 
 
 // gave	use

@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-        <!-- bootstrap -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="tictactoe.css">
     <link rel="stylesheet" type="text/css" href="tictactoepage.css">
-    <script src="Alphabetconvert.js"> </script>
+    <script src="Alphabetconvert.js">
+    </script>
     <script src="tictactoe.js" defer></script>
     <title>Tic Tac Toe</title>
 </head>
@@ -21,56 +20,55 @@
     <sectionOne>
         <nav class="navbar navbar-light bg-light">
             <!-- Image Logo -->
-              <a class="navbar-brand" href="#">
-                <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-                Bootstrap
-              </a>
-              <!-- end of logo -->
-              <div class="navbuttons">
+            <a class="navbar-brand" href="#">
+                <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""> Bootstrap
+            </a>
+            <!-- end of logo -->
+            <div class="navbuttons">
                 <button id="gamesBtn" type="button" class="btn btn-danger navbuttons">Games</button>
                 <button id="videoBtn" type="button" class="btn btn-info navbuttons">Video</button>
                 <button id="coloringBookBtn" type="button" class="btn btn-warning navbuttons">Coloring Book</button>
                 <button id="grownUpBtn" type="button" class="btn btn-success navbuttons">Grown ups</button>
-                </div>
-            </nav>
+            </div>
+        </nav>
         </nav>
     </sectionOne>
-   
+
 
     <sectionTwo>
         <div class="backR">
-        <h1>Tic Tac Toe</h1>
-        <div><span id="displayBox"> </span></div>
-        <div class="BoardOne" id="BoardOne">
-            <div class="cellBOne circle" data-cell></div>
-            <div class="cellBOne dash" data-cell></div>
-            <div class="cellBOne square" data-cell></div>
-            <div class="cellBOne square" data-cell></div>
-            <div class="cellBOne" data-cell></div>
-            <div class="cellBOne" data-cell></div>
-            <div class="cellBOne" data-cell></div>
-            <div class="cellBOne" data-cell></div>
-            <div class="cellBOne" data-cell></div>
-            <div class="cellBOne" data-cell></div>
-            <div class="cellBOne" data-cell></div>
-            <div class="cellBOne" data-cell></div>
-            <div class="cellBOne" data-cell></div>
-            <div class="cellBOne" data-cell></div>
-            <div class="cellBOne" data-cell></div>
-            <div class="cellBOne" data-cell></div>
-        </div>
-<div id="buttonChoice" class="">
-    <button id="circleButton"  type="button" class="btn btn-dark"><div class="circleButton "><div></div>Circle</button><br>
-    <button id="dashButton" type="button" class="btn btn-dark"><div class="dashButton"><div></div>Dash</button><br>
-    <button id="squareButton" type="button" class="btn btn-dark"><div class="squareButton"><div></div>Square</button>
-</div>
-        <div class="winning-message-One" id="winningMessageOne">
-            <div class="data-winning-message-text-One"></div>
-            <button id="restartButtonOne">Restart</button>
-        </div>
+            <h1>Tic Tac Toe</h1>
+            <div><span id="displayBox"> </span></div>
+            <div class="BoardOne" id="BoardOne">
+                <div class="cellBOne circle" data-cell></div>
+                <div class="cellBOne dash" data-cell></div>
+                <div class="cellBOne square" data-cell></div>
+                <div class="cellBOne square" data-cell></div>
+                <div class="cellBOne" data-cell></div>
+                <div class="cellBOne" data-cell></div>
+                <div class="cellBOne" data-cell></div>
+                <div class="cellBOne" data-cell></div>
+                <div class="cellBOne" data-cell></div>
+                <div class="cellBOne" data-cell></div>
+                <div class="cellBOne" data-cell></div>
+                <div class="cellBOne" data-cell></div>
+                <div class="cellBOne" data-cell></div>
+                <div class="cellBOne" data-cell></div>
+                <div class="cellBOne" data-cell></div>
+                <div class="cellBOne" data-cell></div>
+            </div>
+            <div id="buttonChoice" class="">
+                <button id="circleButton" type="button" class="btn btn-dark"><div class="circleButton "><div></div>Circle</button><br>
+                <button id="dashButton" type="button" class="btn btn-dark"><div class="dashButton"><div></div>Dash</button><br>
+                <button id="squareButton" type="button" class="btn btn-dark"><div class="squareButton"><div></div>Square</button>
+            </div>
+            <div class="winning-message-One" id="winningMessageOne">
+                <div class="data-winning-message-text-One"></div>
+                <button id="restartButtonOne">Restart</button>
+            </div>
 
 
-    </div>
+        </div>
     </sectionTwo>
 
 

@@ -7,11 +7,24 @@ body {
     overflow-x: hidden;
 }
 
+.links {
+    font-family: 'Amatic SC', cursive;
+    font-weight: bolder;
+    font-size: 45px;
+}
+
+#text {
+    max-height: 64px;
+    padding-left: 10px;
+}
+
 body {
     margin: auto;
     background-image: url("https://images.unsplash.com/photo-1471882243907-ba1cf91b79ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2301&q=80");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    height: 100%
 }
 
 main {
@@ -23,15 +36,4 @@ main {
     float: left;
     font-weight: bolder;
     font-size: 25;
-}
-
-.links {
-    font-family: 'Amatic SC', cursive;
-    font-weight: bolder;
-    font-size: 45px;
-}
-
-#text {
-    max-height: 64px;
-    padding-left: 10px;
 }

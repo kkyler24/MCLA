@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MCLA</title>
     <!-- Boostrap Css -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link  type="text/css" rel="stylesheet" href="race.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="race.css">
 </head>
+
 <body>
     <header>
-<!--NavBar  -->
+        <!--NavBar  -->
+        <div class="navbar-fixed">
+            <nav class="white flow-text">
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo left">
+                    <img src="../../assets/pictures/LogoText.png"" alt="MCLA LOGO" id="text" class="responsive-img">
+                </a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons white green-text">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#!" class="waves-effect waves-light btn red links">Games</a></li>
+                        <li><a href="#!" class="waves-effect waves-light btn teal links">Videos</a></li>
+                        <li><a href="#!" class="waves-effect waves-light btn yellow accent-4 links">Coloring Book</a></li>
+                        <li><a href="#!" class="waves-effect waves-light btn green links">Grown-ups</a></li>
+                    </ul>
+                </div>
+            </nav>
 
-<nav class="navbar navbar-light bg-light">
-  <!-- Image Logo -->
-    <a class="navbar-brand" href="#">
-      <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-      Bootstrap
-    </a>
-    <!-- end of logo -->
-    <div class="navbuttons">
-      <button id="gamesBtn" type="button" class="btn btn-danger navbuttons">Games</button>
-      <button id="videoBtn" type="button" class="btn btn-info navbuttons">Video</button>
-      <button id="coloringBookBtn" type="button" class="btn btn-warning navbuttons">Coloring Book</button>
-      <button id="grownUpBtn" type="button" class="btn btn-success navbuttons">Grown ups</button>
-      </div>
-  </nav>
-  <!-- Jumbotron -->
-<br>
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="#!" class="red links white-text">Games</a></li>
+                <li><a href="#!" class="teal links white-text">Videos</a></li>
+                <li><a href="#!" class="yellow accent-4 links white-text">Coloring Book</a></li>
+                <li><a href="#!" class="green links white-text">Grown-ups</a></li>
+            </ul>
+
     </header>
+
     <main>
 
-      <div id="mainContainerHtml" class="container d-flex align-content-center">
-        <div class="row">
-          <iframe src="https://i.simmer.io/@Ky24/code-collection" style="width:960px;height:600px;border:0"></iframe>
-      </div>
-   
+        <div id="mainContainerHtml" class="container d-flex align-content-center">
+            <div class="row">
+                <iframe src="https://i.simmer.io/@Ky24/code-collection" style="width:960px;height:600px;border:0"></iframe>
+            </div>
+
 
 
 
@@ -45,13 +57,24 @@
 
 
     </main>
-<!-- footer -->
-<footer>
+    <!-- footer -->
+    <footer>
 
-</footer>
+    </footer>
     <!--JS files  -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.sidenav').sidenav({
+                menuWidth: 300,
+                closeOnClick: true,
+                edge: 'right'
+
+            })
+        })
+    </script>
 </body>
+
 </html>

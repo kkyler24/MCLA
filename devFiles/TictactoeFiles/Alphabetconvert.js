@@ -84,33 +84,34 @@ let splitArray = [];
 // // choose random word from array then split it
 let splicer = secondGradeSW[Math.floor(Math.random()*secondGradeSW.length)].split("");
 let splitWord = console.log(splicer);
-// //var secondGradeSW = ['this', 'is', 'a', 'word', 'array'];
-// var splitArray = [];
-// // choose random word from array then split it
-// let splicer = secondGradeSW[Math.floor(Math.random() * secondGradeSW.length)].split("");
-// let splitWord = console.log(splicer);
+
+
+// pushes returned values into a readable array
 splicer.map((item) => splitArray.push(item));
 console.log(splitArray);
 
-
+// maps out the array and compares it to the alphabet array and returns the values. 
 let wordMatch = splitArray.map((obj)=> alpahbetCode[obj]);
 console.log(wordMatch);
+
+wordMatch.forEach(function(wordMatch) {
+    var text = document.createElement('li');
+    text.innerText = wordMatch;
+    // li.appendChild(li);
+    let dB = document.getElementById("displayBox");
+    console.log(dB);
+    dB.append(text);
+    
+  });
+
+ 
 // removes word from array when it has been chosen, so there is no repeat
 const index = secondGradeSW.indexOf(splicer);
  if (index > -1) {secondGradeSW.splice(index, 1);
 console.log(secondGradeSW);
  }
-//  $("#displayBox").;
-//  let newWord = splicer;
-// Object.values(charCodes).forEach(mCodes => {
-//     if (splicer === charCodes[mCodes])
-//          newWord = mCodes
-// })
-$.each(charCodes, function(keys, values){
-    if (splitWord === alpahbetCode[keys])
-      return(alpahbetCode[values]);
-})
 
+ 
 
 
 // gave	use
@@ -127,7 +128,3 @@ $.each(charCodes, function(keys, values){
 // your      
 // off                     	been
 // both	before
-
-
-
-//

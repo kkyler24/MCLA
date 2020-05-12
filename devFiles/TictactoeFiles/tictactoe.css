@@ -111,8 +111,9 @@ body{
     width: 93.31px;
 }
 
-.displayBox{
+#displayBox{
    border-width: medium; 
    border-color:black ;
-   
+    color: black;
 }
+

@@ -10,7 +10,7 @@ body {
 .links {
     font-family: 'Amatic SC', cursive;
     font-weight: bolder;
-    font-size: 45px;
+    font-size: 30px;
 }
 
 #text {
@@ -28,12 +28,12 @@ body {
 }
 
 main {
-    padding-top: 10vh;
+    padding-top: 4vh;
 }
 
 #ourMotto {
     font-family: 'Amatic SC', cursive;
     float: left;
     font-weight: bolder;
-    font-size: 25;
+    font-size: 20;
 }

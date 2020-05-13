@@ -8,6 +8,7 @@ $("#squareButton").click(function (event) {
     selectedOption = "square";
 });
 $("#circleButton").click(function (event) {
+   
     selectedOption = "circle";
 });
 $("#dashButton").click(function (event) {
@@ -15,14 +16,17 @@ $("#dashButton").click(function (event) {
 });
 
 const ticTacToeGame = new TicTacToeGame();
+let turn = 0;
 ticTacToeGame.start();
+
+
 
 // creates new game
 function TicTacToeGame() {
     const board = new Board();
     const humanPlayer = new HumanPlayer(board);
     const computerPlayer = new ComputerPlayer(board);
-    let turn = 0;
+   
     this.start = function () {
         // This sets up the functions of the board, players and turns.
         // making sure you wathcing of there are any changes in position, because that woudl mean it is the next players turn. We do this by using a mutationObserver
@@ -44,6 +48,12 @@ function TicTacToeGame() {
     }
 }
 
+function currentPlayerColor (){
+    // if turn is odd then human.player is green
+    // else make class blk. 
+}
+
+
 function Board() {
     this.positions = Array.from($(".cellBOne"));
     // console.log(this.positions);
@@ -58,7 +68,6 @@ function HumanPlayer(board) {
         board.positions.forEach(el => el.addEventListener("click", huTurnTaken));
     }
     
-
     function huTurnTaken(event) {
         let isClicked = false;
         // When selected Option is in the cell restrict another class being applied, when cell is empty only one class can be applied if cellBone
@@ -77,6 +86,9 @@ console.log(classname);
         
     }
 }
+
+
+
 // creating a var of available positions, which will put it in an array, and  that will filter for out taken positions. 
 function ComputerPlayer(board) {
     this.takeTurn = function () {
@@ -144,6 +156,8 @@ Object.keys(charCodes).forEach(mCodes => {
 console.log(morseMatch);
 
 
-//
+let checkBoard = array.from($('.cellBOne'));
+// if ()
+
 
 

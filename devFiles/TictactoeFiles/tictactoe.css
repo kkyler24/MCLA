@@ -136,16 +136,33 @@ body{
     max-width: fit-content;
     height: 600px;
     display: inline-flex;
-    
    
  }
 
- #nabBL{
-     font-family: 'Amatic SC', cursive;
-     font-size: 20px;
- 
+ .btn.navbuttons {
+    font-family: 'Amatic SC', cursive;
+    display: inline-block;
+    font-weight: 300;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    font-size: 1.5rem;
+    border-radius: .10rem;
+    margin-right: 1rem;
+    font-stretch: expanded;
+    height: fit-content;
  }
-
+ .centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ 
  #displayBox{
     max-width: 130px;
     border-color:black ;
@@ -154,14 +171,16 @@ body{
     font-size: large;
     font-weight: bold;
     list-style: none;
-    justify-content: space-evenly;
     text-align: center;
     margin-top: 10% !important;
-    margin-left: 10%;
-    /* margin-right: 1%; */
-    display: inline-block;
-    position: relative;
+    margin-left: 20%;
+    display: block;
+    position: static;
     height: fit-content;
+    display: flex-block;
+    align-items: center;
+    justify-content: center;
+
     
  }
 
@@ -188,6 +207,54 @@ body{
    margin-bottom: 5%;
 
 }
+.shadow, #gamesBtn, #videoBtn, #aboutUs, #log-in{
+    position: relative;
+    box-shadow: 0 3px 4px rgb(0, 0, 0, 0.3), 0 0 40px rgb(0, 0, 0, 0.1) inset;
+}
+
+.shadow::before,
+.shadow::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 0 20px  rgb(0, 0, 0, 0.8);
+}
+
+#middle{
+        position: absolute;
+        left:5%;
+        right:50%;
+        top: 50%;
+        width: 600px;
+        margin-left: -300px;
+        margin-top: 280px;
+        text-align: center;
+        cursor: pointer;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+#section1{
+    background-image: url(https://images.unsplash.com/photo-1499346030926-9a72daac6c63?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+#bG{
+   display: flex;
+   flex-wrap: wrap;
+   background-color: green;
+   max-width: 750px;
+   margin: auto;
+   flex-direction: column;
+}
+#bg>#h1TTT{
+    width: 100px;
+    flex-wrap: nowrap;
+}
+
+
 @media (min-width: 950px) {
     #buttonChoice,
     #middle  {
@@ -230,10 +297,7 @@ body{
     .container {
     max-width: 700px;
 }
-#backR{
-    margin-left: 86.945px;
-    margin-right: 86.945px;
-    height: 800px;
+
 }
 .row {
     display: -webkit-box;

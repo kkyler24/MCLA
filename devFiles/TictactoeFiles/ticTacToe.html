@@ -13,57 +13,74 @@
     <title>Tic Tac Toe</title>
 </head>
 
-<body>
-        <nav class="navbar navbar-light bg-light">
+<body id="section1">
+    <div class="shadow">
+        <nav id="navTTT" class="shadow navbar navbar-light bg-light ">
             <!-- Image Logo -->
               <a class="navbar-brand" href="#">
                 <img src="assets/pictures/LogoText.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
               </a>
               <!-- end of logo -->
-              <div id="nabB" class="navbuttons">
-                <button id="gamesBtn" type="button" class="btn btn-danger navbuttons">Main</button>
-                <button id="videoBtn" type="button" class="btn btn-info navbuttons">Games</button>
-                <button id="coloringBookBtn" type="button" class="btn btn-warning navbuttons">About Us</button>
-                <button id="grownUpBtn" type="button" class="btn btn-success navbuttons">Log-in</button>
+              <div id="nabB" class="navbuttons mr-1"> 
+                <button id="gamesBtn" type="button" class="btn btn-danger navbuttons"><a href="MCLA/index.html"></a>Main</button>
+                <button id="videoBtn" type="button" class="btn btn-info navbuttons"><a href="#"></a>Games</button>
+                <button id="aboutUs" type="button" class="btn btn-warning navbuttons"><a href="devFiles/AboutFiles/About.html"></a>About Us</button>
+                <button id="log-in" type="button" class="btn btn-success navbuttons"><a href="#"></a>Log-in</button>
                 </div>
             </nav>
-    <Section class="Container d-flex flex-wrap align-items-center">      
- <div id="h1TTT" class="col-lg-12 d-inline-flex p-2 justify-content-center"><h1>Tic Tac Toe</h1></div>
-        <div class=" d-md-flexcontainer">
-                <div id="coverBox" class="d-inline-md-flex flex-row align-items-md-center">
-                <div id="displayBox" class="border col-lg-1 col-md-2 col-sm-1 mr"> 
-                </div>
+        </div>
+    <div id="bG" class="flex-container centered">    
+ <div id="h1TTT" class=" flex-container "><h1>Tic Tac Toe</h1></div>
+ 
+ <div class="flex-container ">
+ <p class="centered">Letter Box:</p>
+<div id="displayBox" class="centered ml-1"> </div>
+</div>
+ <div class="flex-container">
+    <div class="BoardOne" id="BoardOne">
+        <div class="cellBOne circle" data-cell></div>
+        <div class="cellBOne dash" data-cell></div>
+        <div class="cellBOne square" data-cell></div>
+        <div class="cellBOne square" data-cell></div>
+        <div class="cellBOne" data-cell></div>
+        <div class="cellBOne" data-cell></div>
+        <div class="cellBOne" data-cell></div>
+        <div class="cellBOne" data-cell></div>
+        <div class="cellBOne" data-cell></div>
+        <div class="cellBOne" data-cell></div>
+        <div class="cellBOne" data-cell></div>
+        <div class="cellBOne" data-cell></div>
+        <div class="cellBOne" data-cell></div>
+        <div class="cellBOne" data-cell></div>
+        <div class="cellBOne" data-cell></div>
+        <div class="cellBOne" data-cell></div>
+    </div>
+</div>
+ <div class="flex-container" style="color: rgb(255, 0, 43);">
+    <div id="buttonChoice" class="">
+        <button id="circleButton" type="button" class="btn btn-dark"><div class="circleButton "><div></div>Circle</button>
+        <button id="dashButton" type="button" class="btn btn-dark"><div class="dashButton"><div></div>Dash</button>
+        <button id="squareButton" type="button" class="btn btn-dark"><div class="squareButton"><div></div>Square</button>
+    </div>
+   </div>
 
-            <div class="BoardOne col-lg-7  col-md-6 col-sm-6 justify-content-center" id="BoardOne">
-                <div class="cellBOne circle" data-cell></div>
-                <div class="cellBOne dash" data-cell></div>
-                <div class="cellBOne square" data-cell></div>
-                <div class="cellBOne square" data-cell></div>
-                <div class="cellBOne" data-cell></div>
-                <div class="cellBOne" data-cell></div>
-                <div class="cellBOne" data-cell></div>
-                <div class="cellBOne" data-cell></div>
-                <div class="cellBOne" data-cell></div>
-                <div class="cellBOne" data-cell></div>
-                <div class="cellBOne" data-cell></div>
-                <div class="cellBOne" data-cell></div>
-                <div class="cellBOne" data-cell></div>
-                <div class="cellBOne" data-cell></div>
-                <div class="cellBOne" data-cell></div>
-                <div class="cellBOne" data-cell></div>
-            </div>
-        </div>
-            <div id="middle" class="flex-row d-flex" style="margin-left: 30%!important;">
-            <div id="buttonChoice" class="col-lg-12 col-md-8">
-                <button id="circleButton" type="button" class="btn btn-dark"><div class="circleButton "><div></div>Circle</button>
-                <button id="dashButton" type="button" class="btn btn-dark"><div class="dashButton"><div></div>Dash</button>
-                <button id="squareButton" type="button" class="btn btn-dark"><div class="squareButton"><div></div>Square</button>
-            </div>
-        </div>
+        
+
+
+</div> 
+
+
+
+
+
+
+
             
-        </div>
-             </div>
-            </Section>         
+           
+    
+                
+           
+        </div>         -->
     <!-- footer -->
     <!-- Bootstrap JQ -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

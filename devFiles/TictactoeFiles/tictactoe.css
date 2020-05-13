@@ -7,23 +7,43 @@
     /* this makes the preview marks 90% of the cell size it edits the width of your dot or dash */
 }
 
+/* Navbar */
+.shadow, #gamesBtn, #videoBtn, #aboutUs, #log-in{
+    position: relative;
+    box-shadow: 0 3px 4px rgb(0, 0, 0, 0.3), 0 0 40px rgb(0, 0, 0, 0.1) inset;
+}
+
+.shadow::before,
+.shadow::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 0 20px  rgb(0, 0, 0, 0.8);
+}
+#nabB{
+    font-family: 'Amatic SC', cursive;
+    word-spacing: 1rem;
+    font-size:30px ;
+    padding: 0rem;
+}
+
 h1{
 
     text-align: center;
     font-size: 75px;
     font-weight: 100;
     align-content: center;
+    font-family: 'Amatic SC', cursive;
+    word-spacing: 1rem;
     
 }
-
 
 body{
     margin:auto;
     
 }
-
+/* baord */
 .BoardOne{
-    width: 100vw;
     height: 50vh;
     display: grid;
     justify-content: center;
@@ -42,8 +62,6 @@ body{
     align-items: center;
     position: relative;
     cursor: pointer;
-    
-    
 }
 
 .cellBOne.dash::before{
@@ -68,8 +86,6 @@ body{
     background-color: rgb(8, 8, 8);
     /* controls how the circle looks */
     border-radius: 50%;
-   
-    
 }
 
 .cellBOne.square::before{
@@ -90,7 +106,6 @@ body{
 .cellBOne.dash,
 .cellBOne.square{
     cursor: not-allowed;
-   
 }
 
 .custom-cur {
@@ -109,10 +124,6 @@ body{
     justify-content: space-evenly;
 
 }
-/* #middle{
-    margin-left:60%;
-
-} */
 
 #circleButton,
 #squareButton,
@@ -126,123 +137,65 @@ body{
     border-radius: 0%;
 }
 
-
-/* tttpage view functionality */
-#coverBox{
-    background-image: url();
-    background-repeat: no-repeat;
-    background-size: cover; 
-    margin-top: -10%;
-    max-width: fit-content;
-    height: 600px;
-    display: inline-flex;
-    
-   
- }
-
- #nabBL{
-     font-family: 'Amatic SC', cursive;
-     font-size: 20px;
- 
- }
-
- #displayBox{
-    max-width: 130px;
-    border-color:black ;
-    color: black;
-    border: 1px solid #212529!important;
-    font-size: large;
-    font-weight: bold;
-    list-style: none;
-    justify-content: space-evenly;
-    text-align: center;
-    margin-top: 10% !important;
-    margin-left: 10%;
-    /* margin-right: 1%; */
-    display: inline-block;
-    position: relative;
-    height: fit-content;
-    
- }
-
-
- #BoardOne{
-     padding-left: 0px;
-     padding-right: 0px;
-     position: static;
-     margin-top: 5%;
-     
-
- }
- #maxH{
-     max-height: 745px;
-     margin-top: 10%;
- }
-
- #h1TTT{
-   max-height: 175px;
-   position:relative;
-   margin-top:5%;
-   margin-left: auto;
-   margin-right: auto;
-   margin-bottom: 5%;
-
-}
-@media (min-width: 950px) {
-    #buttonChoice,
-    #middle  {
-        margin-left: 8.7%;
-
-    }
-@media (max-width: 1094px) {
-        #buttonChoice,
-        #middle  {
-            margin-left: 8.7%;
-    
-        }
-
-/* media  */
-/* @media (max-width: 850px) {
-    #displayBox h1 {
-        font-weight: 75;
-        font-size: 2rem;
-       
-    }
-    .blurb h2 {
-        font-size: 2rem;
-    }
-    #coverBox{
-        width: 750px;
-        height:745px
-    }
-    #buttonChoice{
-        margin-top: 30%;
-        position: absolute;
-        
-        
-    }
-}
-
-@media (min-width: 576px)
-.col-sm-1 {
-    
-@media (min-width: 768px){
-    .container {
-    max-width: 700px;
-}
-#backR{
-    margin-left: 86.945px;
-    margin-right: 86.945px;
-    height: 800px;
-}
-.row {
-    display: -webkit-box;
-    display: -ms-flexbox;
+#bG{
+    border-radius: 20px;
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-right: -0px;
-    margin-left: 0px;
-} */
+    background-color: rgb(48, 177, 182);
+    max-width: 750px;
+    margin: auto;
+    margin-top:5rem ;
+    flex-direction: column;
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.342), 0 0 40px rgba(0, 0, 0, 0.192) inset;
+ }
 
-/* #backR1216px max-min then reduce margin left side */
+ #bg>#h1TTT{
+     width: 100px;
+     flex-wrap: nowrap;
+     font-family: 'Amatic SC', cursive;
+ }
+
+ #section1{
+    background-image: url(https://images.unsplash.com/photo-1499346030926-9a72daac6c63?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+#displayBox{
+    font-weight: bold;
+    width:fit-content ;
+    font-size: 25px;
+    margin-left: 1rem!important;
+}
+   
+#displayBox.centered li{
+    list-style-position: outside;
+    justify-content: flex-start;
+    padding-right: 2rem;
+    list-style-image:url(assets/pictures/air-balloon-line-black-icon-png_309115.jpg);
+    border: 1rem;
+    border-color: black;
+    
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (min-width: 690px) {
+    #h1TTT {
+      font-size: 40px;
+      flex-wrap: nowrap;
+    }
+}
+
+p{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Amatic SC', cursive;
+    margin-bottom: 0.5rem;
+}

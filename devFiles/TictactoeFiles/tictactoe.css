@@ -20,6 +20,12 @@
     z-index: -1;
     box-shadow: 0 0 20px  rgb(0, 0, 0, 0.8);
 }
+#nabB{
+    font-family: 'Amatic SC', cursive;
+    word-spacing: 1rem;
+    font-size:30px ;
+    padding: 0rem;
+}
 
 h1{
 
@@ -27,6 +33,8 @@ h1{
     font-size: 75px;
     font-weight: 100;
     align-content: center;
+    font-family: 'Amatic SC', cursive;
+    word-spacing: 1rem;
     
 }
 
@@ -36,7 +44,6 @@ body{
 }
 /* baord */
 .BoardOne{
-    width: 100vw;
     height: 50vh;
     display: grid;
     justify-content: center;
@@ -99,7 +106,6 @@ body{
 .cellBOne.dash,
 .cellBOne.square{
     cursor: not-allowed;
-   
 }
 
 .custom-cur {
@@ -132,16 +138,21 @@ body{
 }
 
 #bG{
+    border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
-    background-color: green;
+    background-color: rgb(48, 177, 182);
     max-width: 750px;
     margin: auto;
+    margin-top:5rem ;
     flex-direction: column;
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.342), 0 0 40px rgba(0, 0, 0, 0.192) inset;
  }
+
  #bg>#h1TTT{
      width: 100px;
      flex-wrap: nowrap;
+     font-family: 'Amatic SC', cursive;
  }
 
  #section1{
@@ -151,20 +162,19 @@ body{
     background-position: center;
     height: 100%;
 }
+
 #displayBox{
     font-weight: bold;
     width:fit-content ;
-    
-   
-   
-    /* word-spacing: 2rem; */
+    font-size: 25px;
+    margin-left: 1rem!important;
 }
+   
 #displayBox.centered li{
     list-style-position: outside;
     justify-content: flex-start;
     padding-right: 2rem;
     list-style-image:url(assets/pictures/air-balloon-line-black-icon-png_309115.jpg);
-     
     border: 1rem;
     border-color: black;
     
@@ -176,152 +186,16 @@ body{
     justify-content: center;
   }
 
+  @media (min-width: 690px) {
+    #h1TTT {
+      font-size: 40px;
+      flex-wrap: nowrap;
+    }
+}
 
-
-/* 
-
-#coverBox{
-    margin-top: -10%;
-    max-width: fit-content;
-    height: 600px;
-    display: inline-flex;
-   
- }
-
- .btn.navbuttons {
+p{
+    font-size: 30px;
+    font-weight: bold;
     font-family: 'Amatic SC', cursive;
-    display: inline-block;
-    font-weight: 300;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 1px solid transparent;
-    font-size: 1.5rem;
-    border-radius: .10rem;
-    margin-right: 1rem;
-    font-stretch: expanded;
-    height: fit-content;
- }
- 
- 
- #displayBox{
-    max-width: 130px;
-    border-color:black ;
-    color: black;
-    border: 1px solid #212529!important;
-    font-size: large;
-    
-    text-align: center;
-    margin-top: 10% !important;
-    margin-left: 20%;
-    display: block;
-    position: static;
-    height: fit-content;
-    display: flex-block;
-    align-items: center;
-    justify-content: center;
-
-    
- }
-
-
- #BoardOne{
-     padding-left: 0px;
-     padding-right: 0px;
-     position: static;
-     margin-top: 5%;
-     
-
- }
- #maxH{
-     max-height: 745px;
-     margin-top: 10%;
- }
-
- #h1TTT{
-   max-height: 175px;
-   position:relative;
-   margin-top:5%;
-   margin-left: auto;
-   margin-right: auto;
-   margin-bottom: 5%;
-
+    margin-bottom: 0.5rem;
 }
-
-
-#middle{
-        position: absolute;
-        left:5%;
-        right:50%;
-        top: 50%;
-        width: 600px;
-        margin-left: -300px;
-        margin-top: 280px;
-        text-align: center;
-        cursor: pointer;
-        -webkit-user-select: none;
-        user-select: none;
-    }
-
-
-
-
-@media (min-width: 950px) {
-    #buttonChoice,
-    #middle  {
-        margin-left: 8.7%;
-
-    }
-@media (max-width: 1094px) {
-        #buttonChoice,
-        #middle  {
-            margin-left: 8.7%;
-    
-        } */ */
-
-/* media  */
-/* @media (max-width: 850px) {
-    #displayBox h1 {
-        font-weight: 75;
-        font-size: 2rem;
-       
-    }
-    .blurb h2 {
-        font-size: 2rem;
-    }
-    #coverBox{
-        width: 750px;
-        height:745px
-    }
-    #buttonChoice{
-        margin-top: 30%;
-        position: absolute;
-        
-        
-    }
-}
-
-@media (min-width: 576px)
-.col-sm-1 {
-    
-@media (min-width: 768px){
-    .container {
-    max-width: 700px;
-}
-
-}
-.row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -0px;
-    margin-left: 0px;
-} */
-
-/* #backR1216px max-min then reduce margin left side */

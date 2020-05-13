@@ -27,12 +27,14 @@
                 <button id="grownUpBtn" type="button" class="btn btn-success navbuttons">Log-in</button>
                 </div>
             </nav>
-  
+    <Section class="Container d-flex flex-wrap align-items-center">      
+ <div id="h1TTT" class="col-lg-12 d-inline-flex p-2 justify-content-center"><h1>Tic Tac Toe</h1></div>
+        <div class=" d-md-flexcontainer">
+                <div id="coverBox" class="d-inline-md-flex flex-row align-items-md-center">
+                <div id="displayBox" class="border col-lg-1 col-md-2 col-sm-1 mr"> 
+                </div>
 
-        <div class="backR">
-            <div id="displayBox"><span> </span></div>
-            <h1>Tic Tac Toe</h1>
-            <div class="BoardOne" id="BoardOne">
+            <div class="BoardOne col-lg-7  col-md-6 col-sm-6 justify-content-center" id="BoardOne">
                 <div class="cellBOne circle" data-cell></div>
                 <div class="cellBOne dash" data-cell></div>
                 <div class="cellBOne square" data-cell></div>
@@ -50,16 +52,18 @@
                 <div class="cellBOne" data-cell></div>
                 <div class="cellBOne" data-cell></div>
             </div>
-            <div id="buttonChoice" class="">
+        </div>
+            <div id="middle" class="flex-row d-flex" style="margin-left: 30%!important;">
+            <div id="buttonChoice" class="col-lg-12 col-md-8">
                 <button id="circleButton" type="button" class="btn btn-dark"><div class="circleButton "><div></div>Circle</button>
                 <button id="dashButton" type="button" class="btn btn-dark"><div class="dashButton"><div></div>Dash</button>
                 <button id="squareButton" type="button" class="btn btn-dark"><div class="squareButton"><div></div>Square</button>
             </div>
-            <div class="winning-message-One" id="winningMessageOne">
-                <div class="data-winning-message-text-One"></div>
-                <button id="restartButtonOne">Restart</button>
-            </div>
-
+        </div>
+            
+        </div>
+             </div>
+            </Section>         
     <!-- footer -->
     <!-- Bootstrap JQ -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -68,3 +72,4 @@
     <script src="Alphabetconvert.js"> </script>
 
 </body>
+</html>

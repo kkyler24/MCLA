@@ -7,6 +7,20 @@
     /* this makes the preview marks 90% of the cell size it edits the width of your dot or dash */
 }
 
+/* Navbar */
+.shadow, #gamesBtn, #videoBtn, #aboutUs, #log-in{
+    position: relative;
+    box-shadow: 0 3px 4px rgb(0, 0, 0, 0.3), 0 0 40px rgb(0, 0, 0, 0.1) inset;
+}
+
+.shadow::before,
+.shadow::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 0 20px  rgb(0, 0, 0, 0.8);
+}
+
 h1{
 
     text-align: center;
@@ -16,12 +30,11 @@ h1{
     
 }
 
-
 body{
     margin:auto;
     
 }
-
+/* baord */
 .BoardOne{
     width: 100vw;
     height: 50vh;
@@ -42,8 +55,6 @@ body{
     align-items: center;
     position: relative;
     cursor: pointer;
-    
-    
 }
 
 .cellBOne.dash::before{
@@ -68,8 +79,6 @@ body{
     background-color: rgb(8, 8, 8);
     /* controls how the circle looks */
     border-radius: 50%;
-   
-    
 }
 
 .cellBOne.square::before{
@@ -109,10 +118,6 @@ body{
     justify-content: space-evenly;
 
 }
-/* #middle{
-    margin-left:60%;
-
-} */
 
 #circleButton,
 #squareButton,
@@ -126,12 +131,56 @@ body{
     border-radius: 0%;
 }
 
+#bG{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: green;
+    max-width: 750px;
+    margin: auto;
+    flex-direction: column;
+ }
+ #bg>#h1TTT{
+     width: 100px;
+     flex-wrap: nowrap;
+ }
 
-/* tttpage view functionality */
-#coverBox{
-    background-image: url();
+ #section1{
+    background-image: url(https://images.unsplash.com/photo-1499346030926-9a72daac6c63?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-position: center;
+    height: 100%;
+}
+#displayBox{
+    font-weight: bold;
+    width:fit-content ;
+    
+   
+   
+    /* word-spacing: 2rem; */
+}
+#displayBox.centered li{
+    list-style-position: outside;
+    justify-content: flex-start;
+    padding-right: 2rem;
+    list-style-image:url(assets/pictures/air-balloon-line-black-icon-png_309115.jpg);
+     
+    border: 1rem;
+    border-color: black;
+    
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+/* 
+
+#coverBox{
     margin-top: -10%;
     max-width: fit-content;
     height: 600px;
@@ -157,11 +206,7 @@ body{
     font-stretch: expanded;
     height: fit-content;
  }
- .centered {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+ 
  
  #displayBox{
     max-width: 130px;
@@ -169,8 +214,7 @@ body{
     color: black;
     border: 1px solid #212529!important;
     font-size: large;
-    font-weight: bold;
-    list-style: none;
+    
     text-align: center;
     margin-top: 10% !important;
     margin-left: 20%;
@@ -207,18 +251,7 @@ body{
    margin-bottom: 5%;
 
 }
-.shadow, #gamesBtn, #videoBtn, #aboutUs, #log-in{
-    position: relative;
-    box-shadow: 0 3px 4px rgb(0, 0, 0, 0.3), 0 0 40px rgb(0, 0, 0, 0.1) inset;
-}
 
-.shadow::before,
-.shadow::after{
-    content: "";
-    position: absolute;
-    z-index: -1;
-    box-shadow: 0 0 20px  rgb(0, 0, 0, 0.8);
-}
 
 #middle{
         position: absolute;
@@ -234,25 +267,7 @@ body{
         user-select: none;
     }
 
-#section1{
-    background-image: url(https://images.unsplash.com/photo-1499346030926-9a72daac6c63?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
-}
-#bG{
-   display: flex;
-   flex-wrap: wrap;
-   background-color: green;
-   max-width: 750px;
-   margin: auto;
-   flex-direction: column;
-}
-#bg>#h1TTT{
-    width: 100px;
-    flex-wrap: nowrap;
-}
+
 
 
 @media (min-width: 950px) {
@@ -266,7 +281,7 @@ body{
         #middle  {
             margin-left: 8.7%;
     
-        }
+        } */ */
 
 /* media  */
 /* @media (max-width: 850px) {

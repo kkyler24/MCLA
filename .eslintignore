@@ -2,3 +2,4 @@ node_modules
 devFiles/TictactoeFiles
 devFiles/serverFolder
 node_modules/ipaddr.js
+migrations

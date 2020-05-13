@@ -53,7 +53,6 @@ body{
     
 }
 
-
 .cellBOne.circle::before{
     content: "";
     position: absolute;
@@ -111,9 +110,27 @@ body{
     width: 93.31px;
 }
 
-#displayBox{
-   border-width: medium; 
-   border-color:black ;
-    color: black;
+
+
+.circle {
+    border-radius: 0%;
 }
 
+
+/* tttpage view functionality */
+.backR{
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover; 
+ }
+
+ #nabBL{
+     font-family: 'Amatic SC', cursive;
+     font-size: 20px;
+ 
+ }
+
+ #displayBox{
+    border-width: medium; 
+    border-color:black ;
+    color: black;

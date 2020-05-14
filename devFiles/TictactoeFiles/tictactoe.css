@@ -23,9 +23,19 @@
 #nabB{
     font-family: 'Amatic SC', cursive;
     word-spacing: 1rem;
-    font-size:30px ;
+    padding: 0rem;
+    
+}
+
+a:link, a:visited{
+    color: white;
+    font-size:25px ;
+}
+
+#navTTT{
     padding: 0rem;
 }
+/* end navbar */
 
 h1{
 
@@ -42,7 +52,8 @@ body{
     margin:auto;
     
 }
-/* baord */
+
+/* baord in JS File */
 .BoardOne{
     height: 50vh;
     display: grid;
@@ -95,7 +106,7 @@ body{
     /* controls the height of the cricles */
     /* transform: rotate(90deg); */
     height: calc(var(--mark-size)*1.1);
-    background-color: rgb(11, 161, 74);
+    background-color: rgb(8, 8, 8);
     /* controls how the circle looks */
     border-radius: 20%;
    
@@ -103,8 +114,11 @@ body{
 }
 
 .cellBOne.circle,
+.cellBOne.circleP,
 .cellBOne.dash,
-.cellBOne.square{
+.cellBOne.dashP,
+.cellBOne.square,
+.cellBOne.squareP{
     cursor: not-allowed;
 }
 
@@ -137,6 +151,45 @@ body{
     border-radius: 0%;
 }
 
+
+/* human player classes */
+.cellBOne.dashP::before{
+    content: "";
+    width: calc(var(--mark-size)*.20);
+    /* controls the height of the dashes */
+    transform: rotate(90deg);
+    height: var(--mark-size);
+    background-color: rgb(226, 66, 66);
+    /* controls how the dash look */
+    position: relative;
+    
+}
+
+.cellBOne.circleP::before{
+    content: "";
+    position: absolute;
+    width: calc(var(--mark-size)*1.2);
+    /* controls the height of the cricles */
+    /* transform: rotate(90deg); */
+    height: calc(var(--mark-size)*1.2);
+    background-color: rgb(226, 66, 66);
+    /* controls how the circle looks */
+    border-radius: 50%;
+}
+.cellBOne.squareP::before{
+    content: "";
+    position: absolute;
+    width: calc(var(--mark-size)*1);
+    /* controls the height of the cricles */
+    /* transform: rotate(90deg); */
+    height: calc(var(--mark-size)*1.1);
+    background-color: rgb(226, 66, 66);
+    /* controls how the circle looks */
+    border-radius: 20%;
+}
+/* end Board */
+
+/* front-end Baord */
 #bG{
     border-radius: 20px;
     display: flex;
@@ -199,28 +252,4 @@ p{
     font-family: 'Amatic SC', cursive;
     margin-bottom: 0.5rem;
 }
-
-/* human player classes */
-.cellBOne.dashP::before{
-    content: "";
-    width: calc(var(--mark-size)*.20);
-    /* controls the height of the dashes */
-    transform: rotate(90deg);
-    height: var(--mark-size);
-    background-color: rgb(8, 8, 8);
-    /* controls how the dash look */
-    position: relative;
-    
-}
-
-.cellBOne.circleP::before{
-    content: "";
-    position: absolute;
-    width: calc(var(--mark-size)*1.2);
-    /* controls the height of the cricles */
-    /* transform: rotate(90deg); */
-    height: calc(var(--mark-size)*1.2);
-    background-color: rgb(8, 8, 8);
-    /* controls how the circle looks */
-    border-radius: 50%;
-}
+/* end front-end */

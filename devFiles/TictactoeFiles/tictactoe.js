@@ -3,7 +3,7 @@
 // }
 // random words should be put in here and converted to morse code. the computer should evaluate if your letter box matches the randomized word to win the round. 
 // };
-let selectedOption = "circle";
+let selectedOption = "circleP";
 $("#squareButton").click(function (event) {
     selectedOption = "squareP";
 });
@@ -12,7 +12,7 @@ $("#circleButton").click(function (event) {
     selectedOption = "circleP";
 });
 $("#dashButton").click(function (event) {
-    selectedOption = "dash";
+    selectedOption = "dashP";
 });
 
 const ticTacToeGame = new TicTacToeGame();
@@ -48,13 +48,14 @@ function TicTacToeGame() {
     }
 }
 
-function currentPlayerColor (){
-    if(turn % 2===0){
-        selectedOption
-    }
+// function currentPlayerColor (){
+//     if(turn % 2===0){
+//         selectedOption=> 
+//     }
+// if .cellBOne
     // if turn is odd then human.player is green
     // else make class blk. 
-}
+// }
 
 
 function Board() {
@@ -77,7 +78,7 @@ function HumanPlayer(board) {
         console.log(event.target.classList);
        event.target.classList.forEach(classname=>{
 console.log(classname); 
-        if (classname === "circle" || classname === "dash" ||classname === "square" || classname === "circleP" || classname === "dashP"){
+        if (classname === "circle" || classname === "dash" ||classname === "square" || classname === "circleP" || classname === "dashP" || classname === "squareP"){
             isClicked = true;
         }
         })
@@ -103,7 +104,13 @@ function ComputerPlayer(board) {
                 return false
             } else if (p.classList.contains('dash')) {
                 return false
-            } else if (p.classList.contains('Square')) {
+            } else if (p.classList.contains('square')) {
+                return false
+            } else if (p.classList.contains('dashP')) {
+                return false
+            } else if (p.classList.contains('circleP')) {
+                return false
+            } else if (p.classList.contains('squareP')) {
                 return false
             }
             return true
@@ -112,7 +119,8 @@ function ComputerPlayer(board) {
         let classOptions = [
             "circle",
             "dash",
-            "square"
+            "square",
+
         ];
 
         let optionPicker = Math.floor(Math.random() * classOptions.length);

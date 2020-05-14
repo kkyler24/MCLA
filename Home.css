@@ -1,13 +1,17 @@
-/* html{
+html{
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-} */
-/* *,*::after, *::before{
+}
+*,*::after, *::before{
     box-sizing: border-box;
-} */
+}
+html, body {
+    margin: 0;
+    height: 100%;
+}
 #text {
     max-height: 64px;
     padding-left: 10px;

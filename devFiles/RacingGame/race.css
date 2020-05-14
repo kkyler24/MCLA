@@ -14,7 +14,7 @@ body {
 
 #text {
     max-height: 64px;
-    padding-left: 10px;
+   
 }
 
 .iframeC{
@@ -48,6 +48,7 @@ body {
     z-index: -1;
     box-shadow: 0 0 20px  rgb(0, 0, 0, 0.8);
 }
+
 #raceNav{
     font-family: 'Amatic SC', cursive;
     word-spacing: 1rem;

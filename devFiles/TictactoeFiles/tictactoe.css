@@ -24,16 +24,12 @@
     font-family: 'Amatic SC', cursive;
     word-spacing: 1rem;
     padding: 0rem;
-<<<<<<< HEAD
     
 }
 
 a:link, a:visited{
     color: white;
     font-size:25px ;
-=======
-    text-decoration: none;
->>>>>>> 392e76ded5eefff14c8e353019866fe113761d91
 }
 
 #navTTT{

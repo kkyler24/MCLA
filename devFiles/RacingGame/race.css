@@ -23,7 +23,7 @@ body {
     box-shadow: 0 0 20px  rgb(0, 0, 0, 0.8);
 }
 
-.shadow,#raceNav{
+.shadow, #raceNav{
     position: relative;
     box-shadow: 0 3px 4px rgb(0, 0, 0, 0.3), 0 0 40px rgb(0, 0, 0, 0.1) inset;
 }
@@ -34,4 +34,32 @@ body {
     position: absolute;
     z-index: -1;
     box-shadow: 0 0 20px  rgb(0, 0, 0, 0.8);
+}
+
+.shadow {
+    position: relative;
+    box-shadow: 0 3px 4px rgb(0, 0, 0, 0.3), 0 0 40px rgb(0, 0, 0, 0.1) inset;
+}
+
+.shadow::before,
+.shadow::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 0 20px  rgb(0, 0, 0, 0.8);
+}
+#raceNav{
+    font-family: 'Amatic SC', cursive;
+    word-spacing: 1rem;
+    padding: 0rem;
+    
+}
+
+a:link, a:visited{
+    color: white;
+    font-size:25px ;
+}
+
+#navTTT{
+    padding: 0rem;
 }

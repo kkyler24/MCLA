@@ -1,15 +1,13 @@
-// let matchFound = str.strike(){
-// if 
-// }
+
 // random words should be put in here and converted to morse code. the computer should evaluate if your letter box matches the randomized word to win the round. 
 // };
 let selectedOption = "circle";
 $("#squareButton").click(function (event) {
-    selectedOption = "square";
+    selectedOption = "squareP";
 });
 $("#circleButton").click(function (event) {
    
-    selectedOption = "circle";
+    selectedOption = "circleP";
 });
 $("#dashButton").click(function (event) {
     selectedOption = "dash";
@@ -49,6 +47,9 @@ function TicTacToeGame() {
 }
 
 function currentPlayerColor (){
+    if(turn % 2===0){
+        selectedOption
+    }
     // if turn is odd then human.player is green
     // else make class blk. 
 }
@@ -74,7 +75,7 @@ function HumanPlayer(board) {
         console.log(event.target.classList);
        event.target.classList.forEach(classname=>{
 console.log(classname); 
-        if (classname === "circle" || classname === "dash" ||classname === "square"){
+        if (classname === "circle" || classname === "dash" ||classname === "square" || classname === "circleP" || classname === "dashP"){
             isClicked = true;
         }
         })

@@ -5,7 +5,13 @@ html{
     padding: 0px;
     overflow-x: hidden;
 }
-
+*,*::after, *::before{
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    height: 100%;
+}
 #text {
     max-height: 64px;
     padding-left: 10px;
@@ -17,6 +23,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    height: 100%;
     
 }
 
@@ -57,3 +64,16 @@ a:link, a:visited{
     z-index: -1;
     box-shadow: 0 0 20px  rgb(0, 0, 0, 0.8);
 }
+
+#footer {
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.342), 0 0 40px rgba(0, 0, 0, 0.192) inset;
+    box-shadow: 0 0 20px  rgb(0, 0, 0, 0.8);
+    font-family: 'Amatic SC', cursive;
+ }

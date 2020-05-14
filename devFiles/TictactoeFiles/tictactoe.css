@@ -199,6 +199,7 @@ body{
     background-color: rgb(48, 177, 182);
     max-width: 750px;
     margin: auto;
+    margin-bottom: 7%;
     margin-top:5rem ;
     flex-direction: column;
     box-shadow: 0 30px 40px rgba(0, 0, 0, 0.342), 0 0 40px rgba(0, 0, 0, 0.192) inset;
@@ -255,3 +256,16 @@ p{
     margin-bottom: 0.5rem;
 }
 /* end front-end */
+
+#footer {
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.342), 0 0 40px rgba(0, 0, 0, 0.192) inset;
+    box-shadow: 0 0 20px  rgb(0, 0, 0, 0.8);
+    font-family: 'Amatic SC', cursive;
+ }

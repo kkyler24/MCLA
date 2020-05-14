@@ -64,3 +64,15 @@ a:link, a:visited{
 #navTTT{
     padding: 0rem;
 }
+#footer {
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.342), 0 0 40px rgba(0, 0, 0, 0.192) inset;
+    box-shadow: 0 0 20px  rgb(0, 0, 0, 0.8);
+    font-family: 'Amatic SC', cursive;
+ }

@@ -139,20 +139,40 @@ function ComputerPlayer(board) {
 
 
 // Letter Conversion Therapy
-// console.log($(".cellBOne").slice(0,3));
+
 // the code below takes the first three cells from the array and testing to see if it is equal to the classes circle and dashes. 
+let tttBoard = Array.from($(".cellBOne"));
 let firstRow = Array.from($(".cellBOne").slice(0, 4));
 console.log(Array.from(firstRow));
 let firstRowString = "";
+
+let playerCount = 0; 
 firstRow.forEach((cell, i) => {
     console.log(i, cell.classList)
-    if (cell.classList[1] === "circle")
+    if (cell.classList[1] === "circleP")
         firstRowString += ".";
-    if (cell.classList[1] === "dash")
+            playerCount ++
+    if (cell.classList[1] === "dashP")
         firstRowString += "_";
-    if (cell.classList[1] === "square")
+        playerCount ++
+    if (cell.classList[1] === "squareP")
         firstRowString += "X";
+        playerCount ++
 })
+ if (playerCount === 4){
+     wordMatch.forEach((column, i)=> {
+         if (column === firstRowString){
+            firstRow.forEach((column,i)=>{
+                column.classList[1]= "strikeOut";
+            })
+            tttBoard.forEach((letter, i)=>{
+                letter.classList = [];
+             })
+         }
+     })
+ }
+
+
 console.log(firstRowString);
 //the below code takes the charcodes object array and matches it to key of the key value pairs of the object, and spits back the matching letter.  
 console.log(Object.keys(charCodes));
@@ -166,6 +186,6 @@ console.log(morseMatch);
 
 
 let checkBoard = Array.from($('.cellBOne'));
-// if 
+// if cellBOne equals 
 
 

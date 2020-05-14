@@ -31,6 +31,9 @@ a:link, a:visited{
     color: white;
     font-size:25px ;
 }
+#navtext{
+   margin-left: 0.5rem;
+}
 
 #navTTT{
     padding: 0rem;
@@ -255,3 +258,9 @@ p{
     margin-bottom: 0.5rem;
 }
 /* end front-end */
+
+.strikOut{
+    text-decoration-line: line-through;
+    width: 100%;
+    color: black;
+}

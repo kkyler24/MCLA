@@ -165,8 +165,7 @@ Object.keys(charCodes).forEach(mCodes => {
 console.log(morseMatch);
 
 
-let checkBoard = array.from($('.cellBOne'));
-// if ()
-
+let checkBoard = Array.from($('.cellBOne'));
+// if 
 
 

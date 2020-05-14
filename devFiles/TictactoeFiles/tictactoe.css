@@ -25,6 +25,7 @@
     word-spacing: 1rem;
     font-size:30px ;
     padding: 0rem;
+    text-decoration: none;
 }
 
 h1{
@@ -132,11 +133,13 @@ body{
     position: relative;
    
 }
-
 .circle {
     border-radius: 0%;
 }
 
+#navtext{
+    padding: 0rem;
+}
 #bG{
     border-radius: 20px;
     display: flex;

@@ -37,3 +37,11 @@ main {
     font-weight: bolder;
     font-size: 20px;
 }
+
+#indexNav{
+    font-family: 'Amatic SC', cursive;
+    word-spacing: 1rem;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0rem;
+}

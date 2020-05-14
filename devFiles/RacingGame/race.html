@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MCLA</title>
     <!-- Boostrap Css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="race.css">
 </head>
@@ -16,48 +15,41 @@
 <body>
     <header>
         <!--NavBar  -->
-        <div class="navbar-fixed">
-            <nav class="white flow-text">
-                <div class="nav-wrapper">
-                    <a href="#!" class="brand-logo left">
-                        <img src="assets/pictures/LogoText.png"" alt="MCLA LOGO" id="text" class="responsive-img">
-                    </a>
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons white green-text">menu</i></a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="#!" class="waves-effect waves-light btn red links">Games</a></li>
-                        <li><a href="#!" class="waves-effect waves-light btn teal links">Videos</a></li>
-                        <li><a href="#!" class="waves-effect waves-light btn yellow accent-4 links">Coloring Book</a></li>
-                        <li><a href="#!" class="waves-effect waves-light btn green links">Grown-ups</a></li>
-                    </ul>
-                </div>
-            </nav>
-
+        <div class="shadow">
+            <nav id="raceNav" class="shadow navbar navbar-light bg-light ">
+                <!-- Image Logo -->
+                  <a class="navbar-brand" href="#">
+                    <img src="assets/pictures/LogoText.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+                  </a>
+                  <!-- end of logo -->
+                  <button id="gamesBtn" type="button" class="btn btn-danger navbuttons"><a href="../../index.html">Main</a></button>
+                  <button id="videoBtn" type="button" class="btn btn-info navbuttons"><a href="../TictactoeFiles/TicTacToe.html">TicTacToe</a></button>
+                  <button id="aboutUs" type="button" class="btn btn-warning navbuttons"><a href="race.html">Code Collector</a><button>
+                  <button id="log-in" type="button" class="btn btn-success navbuttons"><a href="../AboutFiles/About.html">About Us</a></button>
+                </nav>
+        </div>
+    
     </header>
 
     <main>
 
-        <div id="mainContainerHtml" class="video-container responsive-video">
 
-            <iframe src="https://i.simmer.io/@Ky24/code-collection" style="max-height: 90vh"></iframe>
-        </div>
-
-
-
-
-
-
-
-
+    <div class="container iframeC"  content="justify center">
+        <iframe src="https://i.simmer.io/@Ky24/code-collection" style="width:960px;height:600px"></iframe>
+    </div>
+        
 
     </main>
     <!-- footer -->
     <footer>
 
     </footer>
+
     <!--JS files  -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js "></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " 
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " 
+    crossorigin="anonymous "></script>
+
     <script>
         $(document).ready(function() {
             $('.sidenav').sidenav({

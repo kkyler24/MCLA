@@ -53,9 +53,14 @@ function TicTacToeGame() {
 
         if (match) {
             console.log("match");
-            
+            console.log(match);
         }
     }
+    let alphaMatch = alphabetCode.find(str=>{
+        return match === alphabetCode[Object];
+        console.log(alphaMatch);
+   
+    })
 
     function takeTurn() {
         console.log("turn", turn);

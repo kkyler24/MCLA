@@ -34,6 +34,29 @@ function TicTacToeGame() {
         board.positions.forEach((el) => observer.observe(el, config));
         takeTurn();
     }
+    function checkFunction(){ 
+        let tttBoard = Array.from($(".cellBOne"));
+        
+        let firstRowString = "";
+        tttBoard.forEach((cell, i) => {
+            if (cell.classList[2] === "circleP")
+                firstRowString += ".";
+            if (cell.classList[2] === "dashP")
+                firstRowString += "_";
+            if (cell.classList[2] === "squareP")
+                firstRowString += "X";
+                
+        })
+        let match = wordMatch.find(str=>{
+          return  firstRowString === str;
+        })
+
+        if (match) {
+            console.log("match");
+            
+        }
+    }
+
     function takeTurn() {
         console.log("turn", turn);
         if (turn % 2 === 0) {
@@ -42,6 +65,7 @@ function TicTacToeGame() {
             computerPlayer.takeTurn();
         }
         turn++;
+        checkFunction();
         //the above determines who turn it is. and tells the player pr computer to take their turn.  
     }
 }
@@ -147,30 +171,36 @@ console.log(Array.from(firstRow));
 let firstRowString = "";
 
 let playerCount = 0; 
+console.log(`playerCount:${playerCount}`);
 firstRow.forEach((cell, i) => {
     console.log(i, cell.classList)
-    if (cell.classList[1] === "circleP")
+    if (cell.classList[1] === "circle")
         firstRowString += ".";
             playerCount ++
-    if (cell.classList[1] === "dashP")
+    if (cell.classList[1] === "dash")
         firstRowString += "_";
         playerCount ++
-    if (cell.classList[1] === "squareP")
+    if (cell.classList[1] === "square")
         firstRowString += "X";
         playerCount ++
 })
- if (playerCount === 4){
-     wordMatch.forEach((column, i)=> {
-         if (column === firstRowString){
-            firstRow.forEach((column,i)=>{
-                column.classList[1]= "strikeOut";
-            })
-            tttBoard.forEach((letter, i)=>{
-                letter.classList = [];
-             })
-         }
-     })
- }
+
+
+
+
+//  if (playerCount === 4){
+//      console.log(`playerCount:${playerCount}`);
+//      wordMatch.forEach((column, i)=> {
+//          if (column === firstRowString){
+//             firstRow.forEach((column,i)=>{
+//                 column.classList[1]= "strikeOut";
+//             })
+//             tttBoard.forEach((letter, i)=>{
+//                 letter.classList = [];
+//              })
+//          }
+//      })
+//  }
 
 
 console.log(firstRowString);
@@ -185,7 +215,7 @@ Object.keys(charCodes).forEach(mCodes => {
 console.log(morseMatch);
 
 
-let checkBoard = Array.from($('.cellBOne'));
+// let checkBoard = Array.from($('.cellBOne'));
 // if cellBOne equals 
 
 

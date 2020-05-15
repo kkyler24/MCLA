@@ -202,7 +202,7 @@ body{
     background-color: rgb(48, 177, 182);
     max-width: 750px;
     margin: auto;
-    margin-bottom: 7%;
+    margin-bottom: 10%;
     margin-top:5rem ;
     flex-direction: column;
     box-shadow: 0 30px 40px rgba(0, 0, 0, 0.342), 0 0 40px rgba(0, 0, 0, 0.192) inset;
@@ -219,7 +219,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100%;
+    min-height: calc(100vh- 118px- 118px);
 }
 
 #displayBox{
@@ -260,15 +260,16 @@ p{
 }
 /* end front-end */
 
-.strikOut{
+.cellBOne.strikOut::before{
     text-decoration-line: line-through;
     width: 100%;
     color: black;
 }
+
 #footer {
     left: 0;
     bottom: 0;
-    height: 100px;
+    height: 118px;
     width: 100%;
     background-color: white;
     color: black;

@@ -28,7 +28,7 @@ charCodes["x"] = "_.._";
 charCodes["y"] = "_.__";
 charCodes["z"] = "__..";
 
-const alpahbetCode= 
+const alphabetCode= 
     {"a" : ".-XX",
      "b" : "_...",
      "c" : "_._.",
@@ -88,10 +88,9 @@ let splitWord = console.log(splicer);
 
 // pushes returned values into a readable array
 splicer.map((item) => splitArray.push(item));
-console.log(splitArray);
 
 // maps out the array and compares it to the alphabet array and returns the values. 
-let wordMatch = splitArray.map((obj)=> alpahbetCode[obj]);
+let wordMatch = splitArray.map((obj)=> alphabetCode[obj]);
 console.log(wordMatch);
 
 wordMatch.forEach(function(wordMatch) {
@@ -99,7 +98,6 @@ wordMatch.forEach(function(wordMatch) {
     text.innerText = wordMatch;
     // li.appendChild(li);
     let dB = document.getElementById("displayBox");
-    console.log(dB);
     dB.append(text);
     
   });
@@ -108,7 +106,6 @@ wordMatch.forEach(function(wordMatch) {
 // removes word from array when it has been chosen, so there is no repeat
 const index = secondGradeSW.indexOf(splicer);
  if (index > -1) {secondGradeSW.splice(index, 1);
-console.log(secondGradeSW);
  }
 
  

@@ -31,6 +31,7 @@ main {
     float: left;
     font-weight: bolder;
     font-size: 20px;
+    margin-left: 20px;
 }
 
 #indexNav{
@@ -80,12 +81,15 @@ a:link, a:visited{
   justify-content: center;
   align-items: center;
   display: flex;
+  margin-top: 30px;
  }
 
 .text{
-  font-weight: 100;
-  font-size: 28px;
+font-family: 'Amatic SC', cursive;
+  font-weight: 300;
+  font-size: 50px;
   color: rgb(14, 11, 11);
+  word-spacing: 0.5rem;
 }
 .dud{
   color: #0e0808;

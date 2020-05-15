@@ -23,6 +23,7 @@ body {
 
 main {
     padding-top: 4vh;
+    min-height: calc(100vh- 118px- 118px);
 }
 
 #ourMotto {
@@ -60,6 +61,7 @@ a:link, a:visited{
 }
 
 #footer {
+    position: fixed;
     left: 0;
     bottom: 0;
     height: 100px;

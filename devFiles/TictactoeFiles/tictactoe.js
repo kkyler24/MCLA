@@ -56,11 +56,11 @@ function TicTacToeGame() {
             console.log(match);
         }
     }
-    let alphaMatch = alphabetCode.find(str=>{
-        return match === alphabetCode[Object];
-        console.log(alphaMatch);
+    // let alphaMatch = alphabetCode.find(str=>{
+    //     return match === alphabetCode[Object];
+    //     console.log(alphaMatch);
    
-    })
+    // })
 
     function takeTurn() {
         console.log("turn", turn);

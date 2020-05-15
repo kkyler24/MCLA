@@ -56,9 +56,9 @@ function TicTacToeGame() {
             console.log(match);
         }
     }
-    
+
    
-    })
+    // })
 
     function takeTurn() {
         console.log("turn", turn);

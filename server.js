@@ -1,6 +1,7 @@
+const path = require("path");
 const express = require("express");
 const app = express();
-const exphbs = require("express-handlebars");
+// const exphbs = require("express-handlebars");
 const db = require("./models");
 // db.Dictionary.findAll();
 
@@ -15,12 +16,26 @@ var PORT = process.env.PORT || 8080;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-app.set("view engine", "handlebars");
+app.use(express.static("public")); 
 
+// app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+// app.set("view engine", "handlebars"); BECAUSE WE DO NOT HAVE HBS FILES 
 // should be inside html-routes.js
+
 app.get("/", function(req, res) {
-    res.render("index");
+  res.sendFile(path.join(__dirname,"public/index.html"))
+});
+
+app.get("/ttt", function(req, res) {
+  res.sendFile(path.join(__dirname,"public/ttt.html"))
+});
+
+app.get("/race", function(req, res) {
+  res.sendFile(path.join(__dirname,"public/race.html"))
+});
+
+app.get("/about", function(req, res) {
+  res.sendFile(path.join(__dirname,"public/about.html"))
 });
 
 db.sequelize.sync().then(function() {
@@ -29,3 +44,4 @@ db.sequelize.sync().then(function() {
   });
 });
 
+// app.get("/ttt", function(req, res)); 

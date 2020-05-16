@@ -52,13 +52,13 @@ function TicTacToeGame() {
         })
 
         if (match) {
-            match +="strikOut";
             console.log("match");
             console.log(match);
-            
         }
         
+       
         
+            
     }
 
    

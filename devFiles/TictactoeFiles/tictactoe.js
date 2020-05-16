@@ -52,9 +52,13 @@ function TicTacToeGame() {
         })
 
         if (match) {
+            match +="strikOut";
             console.log("match");
             console.log(match);
+            
         }
+        
+        
     }
     // let alphaMatch = alphabetCode.find(str=>{
     //     return match === alphabetCode[Object];
@@ -176,7 +180,6 @@ console.log(Array.from(firstRow));
 let firstRowString = "";
 
 let playerCount = 0; 
-console.log(`playerCount:${playerCount}`);
 firstRow.forEach((cell, i) => {
     console.log(i, cell.classList)
     if (cell.classList[1] === "circle")

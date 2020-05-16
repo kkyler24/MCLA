@@ -26,6 +26,20 @@
     padding: 0rem;
     
 }
+/* @media (max-width: 850px){
+   
+    #nabB{
+      /* float: left;
+      width: 160px;
+      overflow: hidden;
+      clear: left;
+      text-align: right;
+      text-overflow: ellipsis;
+      white-space: nowrap; */
+    /* }
+  }  */ 
+
+
 
 a:link, a:visited{
     color: white;
@@ -38,6 +52,19 @@ a:link, a:visited{
 #navTTT{
     padding: 0rem;
 }
+
+ @media (max-width: 850px){
+   
+    .custom-brand{
+      float: left;
+      width: 160px;
+      overflow: hidden;
+      clear: left;
+      text-align: right;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  } 
 /* end navbar */
 
 h1{
@@ -84,7 +111,7 @@ body{
     /* controls the height of the dashes */
     transform: rotate(90deg);
     height: var(--mark-size);
-    background-color: rgb(8, 8, 8);
+    background-color: rgb(226, 66, 66);
     /* controls how the dash look */
     position: relative;
     
@@ -97,7 +124,7 @@ body{
     /* controls the height of the cricles */
     /* transform: rotate(90deg); */
     height: calc(var(--mark-size)*1.2);
-    background-color: rgb(8, 8, 8);
+    background-color: rgb(226, 66, 66);
     /* controls how the circle looks */
     border-radius: 50%;
 }
@@ -109,7 +136,7 @@ body{
     /* controls the height of the cricles */
     /* transform: rotate(90deg); */
     height: calc(var(--mark-size)*1.1);
-    background-color: rgb(8, 8, 8);
+    background-color: rgb(226, 66, 66);
     /* controls how the circle looks */
     border-radius: 20%;
    
@@ -161,7 +188,7 @@ body{
     /* controls the height of the dashes */
     transform: rotate(90deg);
     height: var(--mark-size);
-    background-color: rgb(226, 66, 66);
+    background-color: rgb(36, 119, 214);
     /* controls how the dash look */
     position: relative;
     
@@ -174,7 +201,7 @@ body{
     /* controls the height of the cricles */
     /* transform: rotate(90deg); */
     height: calc(var(--mark-size)*1.2);
-    background-color: rgb(226, 66, 66);
+    background-color: rgb(36, 119, 214);
     /* controls how the circle looks */
     border-radius: 50%;
 }
@@ -185,7 +212,7 @@ body{
     /* controls the height of the cricles */
     /* transform: rotate(90deg); */
     height: calc(var(--mark-size)*1.1);
-    background-color: rgb(226, 66, 66);
+    background-color: rgb(36, 119, 214);
     /* controls how the circle looks */
     border-radius: 20%;
 }
@@ -261,10 +288,17 @@ p{
 /* end front-end */
 
 .cellBOne.strikOut::before{
-    text-decoration-line: line-through;
-    width: 100%;
-    color: black;
-}
+        content: "";
+        position: absolute;
+        width: calc(var(--mark-size)*1.4
+        );
+        /* controls the height of the cricles */
+        /* transform: rotate(90deg); */
+        height: calc(var(--mark-size)*.18);
+        background-color: rgb(8, 8, 8);
+        /* controls how the circle looks */
+       
+    }
 
 #footer {
     left: 0;
@@ -278,3 +312,4 @@ p{
     box-shadow: 0 0 20px  rgb(0, 0, 0, 0.8);
     font-family: 'Amatic SC', cursive;
  }
+

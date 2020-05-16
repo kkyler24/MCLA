@@ -1,5 +1,4 @@
-//  let programMorse = require("morsee");
-// const text = morse.morseToText(code); // HEY HOW ARE YOU?
+
 const charCodes = {};
 charCodes["a"] = "._XX";
 charCodes["b"] = "_...";

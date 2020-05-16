@@ -1,0 +1,280 @@
+*,*::after, *::before{
+    box-sizing: border-box;
+}
+:root {
+    --cell-size:100px;
+    --mark-size:calc(var(--cell-size)*.7);
+    /* this makes the preview marks 90% of the cell size it edits the width of your dot or dash */
+}
+
+/* Navbar */
+.shadow {
+    position: relative;
+    box-shadow: 0 3px 4px rgb(0, 0, 0, 0.3), 0 0 40px rgb(0, 0, 0, 0.1) inset;
+}
+
+.shadow::before,
+.shadow::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 0 20px  rgb(0, 0, 0, 0.8);
+}
+#nabB{
+    font-family: 'Amatic SC', cursive;
+    word-spacing: 1rem;
+    padding: 0rem;
+    
+}
+
+a:link, a:visited{
+    color: white;
+    font-size:25px ;
+}
+#navtext{
+   margin-left: 0.5rem;
+}
+
+#navTTT{
+    padding: 0rem;
+}
+/* end navbar */
+
+h1{
+
+    text-align: center;
+    font-size: 75px;
+    font-weight: 100;
+    align-content: center;
+    font-family: 'Amatic SC', cursive;
+    word-spacing: 1rem;
+    
+}
+
+body{
+    margin:auto;
+    
+}
+
+/* baord in JS File */
+.BoardOne{
+    height: 50vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(4,auto);
+    /* this resizes the grid and makes all the cells automatically evenly sized */
+}
+.cellBOne{
+    width: var(--cell-size);
+    height: var(--cell-size);
+    border: 1px solid rgb(8, 8, 8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.cellBOne.dash::before{
+    content: "";
+    width: calc(var(--mark-size)*.20);
+    /* controls the height of the dashes */
+    transform: rotate(90deg);
+    height: var(--mark-size);
+    background-color: rgb(8, 8, 8);
+    /* controls how the dash look */
+    position: relative;
+    
+}
+
+.cellBOne.circle::before{
+    content: "";
+    position: absolute;
+    width: calc(var(--mark-size)*1.2);
+    /* controls the height of the cricles */
+    /* transform: rotate(90deg); */
+    height: calc(var(--mark-size)*1.2);
+    background-color: rgb(8, 8, 8);
+    /* controls how the circle looks */
+    border-radius: 50%;
+}
+
+.cellBOne.square::before{
+    content: "";
+    position: absolute;
+    width: calc(var(--mark-size)*1);
+    /* controls the height of the cricles */
+    /* transform: rotate(90deg); */
+    height: calc(var(--mark-size)*1.1);
+    background-color: rgb(8, 8, 8);
+    /* controls how the circle looks */
+    border-radius: 20%;
+   
+    
+}
+
+.cellBOne.circle,
+.cellBOne.circleP,
+.cellBOne.dash,
+.cellBOne.dashP,
+.cellBOne.square,
+.cellBOne.squareP{
+    cursor: not-allowed;
+}
+
+.custom-cur {
+    cursor: url('/images/chef.svg');
+  }
+/* preventing hovering over cells that are already filled, how to get dash or circle shaped hovers */
+.cellBOne:hover{
+    background-color: rgb(174, 183, 192);
+}
+
+#buttonChoice{
+    height:fit-content;
+    width: fit-content;
+    position: relative;
+    margin-top: 0%;
+    justify-content: space-evenly;
+
+}
+
+#circleButton,
+#squareButton,
+#dashButton{
+    width: 93.31px;
+    position: relative;
+   
+}
+.circle {
+    border-radius: 0%;
+}
+
+
+/* human player classes */
+.cellBOne.dashP::before{
+    content: "";
+    width: calc(var(--mark-size)*.20);
+    /* controls the height of the dashes */
+    transform: rotate(90deg);
+    height: var(--mark-size);
+    background-color: rgb(226, 66, 66);
+    /* controls how the dash look */
+    position: relative;
+    
+}
+
+.cellBOne.circleP::before{
+    content: "";
+    position: absolute;
+    width: calc(var(--mark-size)*1.2);
+    /* controls the height of the cricles */
+    /* transform: rotate(90deg); */
+    height: calc(var(--mark-size)*1.2);
+    background-color: rgb(226, 66, 66);
+    /* controls how the circle looks */
+    border-radius: 50%;
+}
+.cellBOne.squareP::before{
+    content: "";
+    position: absolute;
+    width: calc(var(--mark-size)*1);
+    /* controls the height of the cricles */
+    /* transform: rotate(90deg); */
+    height: calc(var(--mark-size)*1.1);
+    background-color: rgb(226, 66, 66);
+    /* controls how the circle looks */
+    border-radius: 20%;
+}
+/* end Board */
+
+/* front-end Baord */
+#navtext{
+    padding: 0rem;
+}
+#bG{
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(48, 177, 182);
+    max-width: 750px;
+    margin: auto;
+    margin-bottom: 10%;
+    margin-top:5rem ;
+    flex-direction: column;
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.342), 0 0 40px rgba(0, 0, 0, 0.192) inset;
+ }
+
+ #bg>#h1TTT{
+     width: 100px;
+     flex-wrap: nowrap;
+     font-family: 'Amatic SC', cursive;
+ }
+
+ #section1{
+    background-image: url(https://images.unsplash.com/photo-1499346030926-9a72daac6c63?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: calc(100vh- 118px- 118px);
+}
+
+#displayBox{
+    font-weight: bold;
+    width:fit-content ;
+    font-size: 25px;
+    margin-left: 1rem!important;
+}
+   
+#displayBox.centered li{
+    list-style-position: outside;
+    justify-content: flex-start;
+    padding-right: 2rem;
+    list-style-image:url(assets/pictures/air-balloon-line-black-icon-png_309115.jpg);
+    border: 1rem;
+    border-color: black;
+    
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (min-width: 690px) {
+    #h1TTT {
+      font-size: 40px;
+      flex-wrap: nowrap;
+    }
+}
+
+p{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Amatic SC', cursive;
+    margin-bottom: 0.5rem;
+}
+/* end front-end */
+
+.cellBOne.strikOut::before{
+    text-decoration-line: line-through;
+    width: 100%;
+    color: black;
+}
+
+#footer {
+    left: 0;
+    bottom: 0;
+    height: 118px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.342), 0 0 40px rgba(0, 0, 0, 0.192) inset;
+    box-shadow: 0 0 20px  rgb(0, 0, 0, 0.8);
+    font-family: 'Amatic SC', cursive;
+ }

@@ -1,4 +1,2 @@
 # MCLA
-The MorseCode Learning Academy (MCLA), possible software that helps students with disabilities learn to read in an unconventional way. 
-
-
+The MorseCode Learning Academy (MCLA), possible software that uses gaming to helps students with disabilities learn to read in an unconventional way. 

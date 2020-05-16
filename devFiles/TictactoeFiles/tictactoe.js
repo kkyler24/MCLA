@@ -60,9 +60,7 @@ function TicTacToeGame() {
         
         
     }
-    // let alphaMatch = alphabetCode.find(str=>{
-    //     return match === alphabetCode[Object];
-    //     console.log(alphaMatch);
+
    
     // })
 

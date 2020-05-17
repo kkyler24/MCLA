@@ -1,5 +1,6 @@
 const path = require("path");
 const express = require("express");
+const sequel = require("sequelize");
 const app = express();
 // const exphbs = require("express-handlebars");
 const db = require("./models");
@@ -67,3 +68,5 @@ db.sequelize.sync({}).then(function() {
     console.log("App listening on PORT " + PORT);
   });
 });
+
+

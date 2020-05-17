@@ -26,9 +26,30 @@ app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname,"public/index.html"))
 });
 
+app.get("/api/words/:range",function(req,res){
+  var range = req.params.range; 
+  range = range.split(",").map(function(element){
+    return(parseInt(element))
+  });
+
+  db.Words02.findAll({
+    where:{id:{ [db.Sequelize.Op.between]: range}
+  }}).then(function(db_words){ 
+    res.json(db_words)
+   });
+})
+
+
+app.get("/api/words",function(req,res){
+  db.Words02.findAll().then(function(db_words){ 
+    res.json(db_words)
+   });
+})
+
+// 
 app.get("/ttt", function(req, res) {
-  res.sendFile(path.join(__dirname,"public/ttt.html"))
-});
+    res.sendFile(path.join(__dirname,"public/ttt.html"))
+  })
 
 app.get("/race", function(req, res) {
   res.sendFile(path.join(__dirname,"public/race.html"))
@@ -38,10 +59,11 @@ app.get("/about", function(req, res) {
   res.sendFile(path.join(__dirname,"public/about.html"))
 });
 
-db.sequelize.sync().then(function() {
+
+// app.get("/ttt", function(req, res)); 
+
+db.sequelize.sync({}).then(function() {
   app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
   });
 });
-
-// app.get("/ttt", function(req, res)); 

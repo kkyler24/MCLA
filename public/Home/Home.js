@@ -58,7 +58,8 @@ class TextScramble {
     'Welcome to MCLA',
     'The Morse Code Learning Academy',
     'Where learning is unconventional',
-    'and always inclusive',
+    'and always inclusive.',
+    "find out more about us below",
   ]
   
   const el = document.querySelector('.text')

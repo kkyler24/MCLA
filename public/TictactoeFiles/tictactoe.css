@@ -52,19 +52,6 @@ a:link, a:visited{
 #navTTT{
     padding: 0rem;
 }
-
- @media (max-width: 850px){
-   
-    .custom-brand{
-      float: left;
-      width: 160px;
-      overflow: hidden;
-      clear: left;
-      text-align: right;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-  } 
 /* end navbar */
 
 h1{
@@ -313,3 +300,4 @@ p{
     font-family: 'Amatic SC', cursive;
  }
 
+ 

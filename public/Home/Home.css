@@ -1,6 +1,6 @@
 html, body {
     margin: 0;
-    height: 100%;
+    
 }
 *,*::after, *::before{
     box-sizing: border-box;
@@ -11,19 +11,16 @@ html, body {
     padding-left: 10px;
 }
 
-body {
-  
-    background-image: url("https://images.unsplash.com/photo-1471882243907-ba1cf91b79ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2301&q=80");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
-    
-}
-
-main {
+#styleMain {
     padding-top: 4vh;
     min-height: calc(100vh- 118px- 118px);
+    background-image: url("https://images.unsplash.com/photo-1471882243907-ba1cf91b79ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2301&q=80");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height:800px;
+    position: relative;
+   display: block;
 }
 
 #ourMotto {
@@ -32,6 +29,7 @@ main {
     font-weight: bolder;
     font-size: 20px;
     margin-left: 20px;
+    margin-bottom: 10% ;
 }
 
 #indexNav{
@@ -76,7 +74,7 @@ a:link, a:visited{
  }
 
  .container{
-  height: 100%;
+  height: 50%;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -94,3 +92,68 @@ font-family: 'Amatic SC', cursive;
 .dud{
   color: #0e0808;
 }
+
+#aboutUsC{
+    width: 100%;
+    background-color: white;
+    height: 500px;
+    display: block;
+    position: relative;
+    bottom: 0px;
+    color: black;
+    align-items: flex-end;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+.headlineAboutUs{
+   align-content: center;
+    content: "";
+    position: relative;
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+    font: bold;
+    color: white;
+  }
+  #pointer {
+    width: 600px;
+    height: 70px;
+    position: relative;
+    background: rgb(12, 148, 172);
+  }
+  #pointer:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    /* height: 70px; */
+    border-left: 20px solid rgb(12, 148, 172);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  }
+  #pointer:before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    width: 0;
+    height: 70px;
+    border-left: 20px solid rgb(12, 148, 172);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  }
+ 
+
+
+  #ourMission{
+    align-content: center;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 600px;
+    display: flex;
+  }

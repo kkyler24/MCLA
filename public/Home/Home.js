@@ -75,3 +75,8 @@ class TextScramble {
   }
  next()
   
+ AOS.init({
+  duration: 1200,
+  once: true, // whether animation should happen only once - while scrolling down
+  mirror: true,
+})

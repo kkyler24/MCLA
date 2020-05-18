@@ -1,6 +1,12 @@
-html, body {
+html {
     margin: 0;
+    height: 100%;
+   
     
+}
+body{
+    height: 100vh;
+
 }
 *,*::after, *::before{
     box-sizing: border-box;
@@ -40,38 +46,24 @@ html, body {
     padding: 0rem;
 }
 
+
 a:link, a:visited{
     color: white;
     font-size:25px ;
     padding: 0rem;
 }
 
-.shadow {
+.shadow.navbar {
     position: relative;
     box-shadow: 0 3px 4px rgb(0, 0, 0, 0.3), 0 0 40px rgb(0, 0, 0, 0.1) inset;
 }
 
-.shadow::before,
-.shadow::after{
+.shadow::before{
     content: "";
     position: absolute;
     z-index: -1;
     box-shadow: 0 0 20px  rgb(0, 0, 0, 0.8);
 }
-
-#footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
-    background-color: white;
-    color: black;
-    text-align: center;
-    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.342), 0 0 40px rgba(0, 0, 0, 0.192) inset;
-    box-shadow: 0 0 20px  rgb(0, 0, 0, 0.8);
-    font-family: 'Amatic SC', cursive;
- }
 
  .container{
   height: 50%;
@@ -94,6 +86,7 @@ font-family: 'Amatic SC', cursive;
 }
 
 #aboutUsC{
+  margin-top: 5%;
     width: 100%;
     background-color: white;
     height: 500px;
@@ -147,11 +140,10 @@ font-family: 'Amatic SC', cursive;
     border-bottom: 20px solid transparent;
   }
  
-  #ourMission{
-    align-content: center;
+  .ourMission{
+   
     margin-top: 5%;
     margin-left: 10%;
     margin-right: 10%;
-    width: 600px;
-    display: flex;
+  
   }

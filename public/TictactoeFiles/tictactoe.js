@@ -50,7 +50,7 @@ function TicTacToeGame() {
         let match = wordMatch.find(str=>{
           return  firstRowString === str;
         })
-
+ $()
         if (match) {
             console.log("match");
             console.log(match);

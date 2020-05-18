@@ -1,4 +1,27 @@
 
+//  $.ajax({
+//   url:("/api/words"),
+//   method: "GET"
+// })
+// .then(function(respose){
+//   console.log(response);
+// })
+fetch("https://similarwords.p.rapidapi.com/moar?query=cat", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "similarwords.p.rapidapi.com",
+		"x-rapidapi-key": "aaea0493d3msh31fddf1759e8b84p100a64jsnf53a382e57c0"
+	}
+})
+.then(response => {
+console.log(response)
+})
+// .then(response =>console.log(response))
+.catch(err => {
+	console.log(err);
+});
+
+
 const charCodes = {};
 charCodes["a"] = "._XX";
 charCodes["b"] = "_...";

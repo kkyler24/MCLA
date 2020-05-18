@@ -1,7 +1,9 @@
+
+
 {
   "development": {
     "username": "root",
-    "password": "jim1",
+    "password": "Homoglobin#1",
     "database": "words_db",
     "host": "127.0.0.1",
     "dialect": "mysql",
@@ -9,7 +11,7 @@
   },
   "test": {
     "username": "root",
-    "password": "jim1",
+    "password": "",
     "database": "words_db",
     "host": "127.0.0.1",
     "dialect": "mysql",
@@ -17,7 +19,7 @@
   },
   "production": {
     "username": "root",
-    "password": "jim1",
+    "password": "",
     "database": "words_db",
     "host": "127.0.0.1",
     "dialect": "mysql",

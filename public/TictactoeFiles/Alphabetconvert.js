@@ -1,27 +1,4 @@
 
-//  $.ajax({
-//   url:("/api/words"),
-//   method: "GET"
-// })
-// .then(function(respose){
-//   console.log(response);
-// })
-fetch("https://similarwords.p.rapidapi.com/moar?query=cat", {
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "similarwords.p.rapidapi.com",
-		"x-rapidapi-key": "aaea0493d3msh31fddf1759e8b84p100a64jsnf53a382e57c0"
-	}
-})
-.then(response => {
-console.log(response)
-})
-// .then(response =>console.log(response))
-.catch(err => {
-	console.log(err);
-});
-
-
 const charCodes = {};
 charCodes["a"] = "._XX";
 charCodes["b"] = "_...";
@@ -102,6 +79,8 @@ let secondGradeSW = [
     "us"
 
 ];
+
+
 let splitArray = [];
 // // choose random word from array then split it
 let splicer = secondGradeSW[Math.floor(Math.random()*secondGradeSW.length)].split("");
@@ -131,19 +110,3 @@ const index = secondGradeSW.indexOf(splicer);
  }
 
  
-
-
-// gave	use
-// goes	very
-// green	wash
-// its	which
-// made	why
-// many	wish
-// or	work
-// pull	would
-// read	write
-// right	always
-// sing	around
-// your      
-// off                     	been
-// both	before

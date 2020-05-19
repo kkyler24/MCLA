@@ -5,18 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Collector</title>
-    <!-- Boostrap Css -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
--->
+
 <link rel="stylesheet" href="https://jeromelachaud.com/freelancer-theme/css/font-awesome/css/font-awesome.min.css" />
+<<<<<<< HEAD
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amatic+SC:wght@700&display=swap" rel="stylesheet"/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<link type="text/css" rel="stylesheet" href="RacingGame/race.css"/>
+=======
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amatic+SC:wght@700&display=swap"/>
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"  />
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"/>
 <link rel="stylesheet" type="text/css" href="RacingGame/race.css"/>
+>>>>>>> 1df8a499b5651a3e75d2b8dcdd5ad9841bc7dde1
 
 </head>
 
@@ -32,40 +36,32 @@
                   <!-- end of logo -->
                   <div id="nabB" class="navbuttons mr-1"> 
                     <button id="gamesBtn" type="button" class="btn btn-danger navbuttons">
-                        <a href="/">Main</a></button>
+                        <a href="/public/index.html">Main</a></button>
     
                     <button id="TTT" type="button" class="btn btn-info navbuttons">
-                        <a href="ttt">Tic Tac Toe</a></button>
+                        <a href="/public/ttt.html">Tic Tac Toe</a></button>
     
                     <button id="race" type="button" class="btn btn-success navbuttons">
-                        <a href="#">Code Collector</a></button>
-    
-                    <button id="log-in" type="button" class="btn btn-warning navbuttons">
-                        <a href="form.html">Log-in</a></button>
-                 
+                        <a href="/public/race.html">Code Collector</a></button>
                     </div>
                 </nav>
         </div>
     
     </header>
 
-    <main>
-           
+    <main id="raceD">
+           <br>
         <div class="container" content="justify center">
-            <div class="row">
-                <h3>Code Collector</h3>
+            <div id="codeHeadline" class="row">
+                <h2>The Code Collector</h2>
             </div>
-        </div>
-
-
+    </div>
+<br>
     <div class="container iframeC"  content="justify center">
         <iframe src="https://i.simmer.io/@Ky24/code-collection" style="width:960px;height:600px"></iframe>
     </div>
-        
-
     </main>
     <!-- footer -->
-   
     <footer id="footer" class="text-center">
         <div class="footer-above">
             <div class="blank-flex-container-1"></div>
@@ -101,17 +97,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " 
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " 
     crossorigin="anonymous "></script>
-
-    <script>
-        $(document).ready(function() {
-            $('.sidenav').sidenav({
-                menuWidth: 300,
-                closeOnClick: true,
-                edge: 'right'
-
-            })
-        })
-    </script>
 </body>
 
 </html>

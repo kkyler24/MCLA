@@ -6,9 +6,11 @@ body {
     overflow-x: hidden;
     flex-direction: column;
 }
+
 #raceNav{
     top:5px;
     bottom:5px;
+    
 }
 
 .links {
@@ -24,46 +26,23 @@ h3{
 
 #text {
     max-height: 64px;
-   
 }
 
 .iframeC{
     padding-left: 80px;
-    box-shadow: 0 3px 4px rgb(0, 0, 0, 0.3), 0 0 40px rgb(0, 0, 0, 0.1) inset;
-    box-shadow: 0 0 20px  rgb(0, 0, 0, 0.8);
-}
+    margin-bottom: 10%;
 
-.shadow, #raceNav{
-    position: relative;
-    box-shadow: 0 3px 4px rgb(0, 0, 0, 0.3), 0 0 40px rgb(0, 0, 0, 0.1) inset;
-}
-
-.shadow::before,
-.shadow::after{
-    content: "";
-    position: absolute;
-    z-index: -1;
-    box-shadow: 0 0 20px  rgb(0, 0, 0, 0.8);
-}
-
-.shadow {
-    position: relative;
-    box-shadow: 0 3px 4px rgb(0, 0, 0, 0.3), 0 0 40px rgb(0, 0, 0, 0.1) inset;
-}
-
-.shadow::before,
-.shadow::after{
-    content: "";
-    position: absolute;
-    z-index: -1;
-    box-shadow: 0 0 20px  rgb(0, 0, 0, 0.8);
 }
 
 #raceNav{
     font-family: 'Amatic SC', cursive;
     word-spacing: 1rem;
     padding: 0rem;
-    
+}
+#codeHeadline{
+    color: white;
+    align-content: center;
+
 }
 
 a:link, a:visited{
@@ -73,6 +52,13 @@ a:link, a:visited{
 
 #navTTT{
     padding: 0rem;
+}
+
+#raceD{
+    background-image: url("https://images.unsplash.com/photo-1585588304697-207203156cd8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
 }
 
 #footer {
@@ -88,9 +74,9 @@ a:link, a:visited{
       margin-bottom: 30px;
       text-align: center;
   }
+ 
   #footerFlex{
    margin: auto;
-    
   }
   
   footer .footer-above {
@@ -102,10 +88,6 @@ a:link, a:visited{
     display: flex;
   }
   
-  footer .footer-col {
-      margin-bottom: 30px;
-  }
-  
   .btn-social {
       display: inline-block;
       width: 50px;
@@ -114,7 +96,7 @@ a:link, a:visited{
       border-radius: 100%;
       text-align: center;
       font-size: 20px;
-      line-height: 45px;
+      line-height: 30px;
       align-content: center;
   }
   
@@ -152,16 +134,3 @@ a:link, a:visited{
       font-size: 25px;
       padding: 0rem;
   }
-  /* .text{
-  font-family: 'Amatic SC', cursive;
-    font-weight: 300;
-    font-size: 50px;
-    color: rgb(14, 11, 11);
-    word-spacing: 0.5rem;
-  }
-  .dud{
-    color: #0e0808;
-  }
-  
-   
-  media

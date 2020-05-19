@@ -229,7 +229,7 @@ body{
  }
 
  #section1{
-    background-image: url(https://images.unsplash.com/photo-1499346030926-9a72daac6c63?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
+    background-image: url("https://cdn2.vectorstock.com/i/1000x1000/13/91/nature-game-background-landscape-vector-3741391.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -364,17 +364,4 @@ p{
           font-size: 25px;
           padding: 0rem;
       }
-      /* .text{
-      font-family: 'Amatic SC', cursive;
-        font-weight: 300;
-        font-size: 50px;
-        color: rgb(14, 11, 11);
-        word-spacing: 0.5rem;
-      }
-      .dud{
-        color: #0e0808;
-      }
-      
-       
-      media
-      
+     

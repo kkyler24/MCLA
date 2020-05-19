@@ -6,7 +6,8 @@ html {
 }
 body{
     height: 100vh;
-
+    display: flex;
+    flex-direction: column;
 }
 *,*::after, *::before{
     box-sizing: border-box;
@@ -65,6 +66,16 @@ a:link, a:visited{
     box-shadow: 0 0 20px  rgb(0, 0, 0, 0.8);
 }
 
+#footer {
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.342), 0 0 40px rgba(0, 0, 0, 0.192) inset;
+    box-shadow: 0 0 20px  rgb(0, 0, 0, 0.8);
+    font-family: 'Amatic SC', cursive;
+ }
+
  .container{
   height: 50%;
   width: 100%;
@@ -86,7 +97,6 @@ font-family: 'Amatic SC', cursive;
 }
 
 #aboutUsC{
-  margin-top: 5%;
     width: 100%;
     background-color: white;
     height: 500px;

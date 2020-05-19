@@ -6,6 +6,7 @@ html {
 }
 body{
     height: 100vh;
+    overflow-x: hidden 
 }
 *,*::after, *::before{
     box-sizing: border-box;
@@ -140,6 +141,7 @@ body{
 
 #whoWeR{
   background-color: rgba(183, 212, 241, 0.774);
+  width: 100%;
 }
 
 #whoWeRparagraph{
@@ -151,6 +153,31 @@ body{
   width: 100%;
   height: 100px;
   background-color:rgb(12, 172, 201);
+}
+/* contact form */
+.contactForm{
+  background-color:rgb(12, 172, 201);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.form{
+  justify-content: center;
+  margin-left: 10%;
+  align-self: center;
+  padding: 0rem;
+  
+
+}
+
+.formPic{
+  background-image: url('/public/assets/pictures/boyReading.jpg');
+  height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  padding: 0rem;
+
 }
 
 

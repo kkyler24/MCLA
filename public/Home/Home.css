@@ -60,23 +60,10 @@ body{
   padding: 0rem;
 }
 
-.shadow.navbar {
-  position: relative;
-  box-shadow: 0 3px 4px rgb(0, 0, 0, 0.3), 0 0 40px rgb(0, 0, 0, 0.1) inset;
-}
-
-.shadow::before{
-  content: "";
-  position: absolute;
-  z-index: -1;
-  box-shadow: 0 0 20px  rgb(0, 0, 0, 0.8);
-}
-
-
 
 /* sectionTwo */
 #aUsHeadline{
-  margin-top: 5%;
+  margin-top: 2%;
     display: flex;
   justify-content: flex-start;
   margin-left: 2rem;
@@ -85,7 +72,7 @@ body{
 #ourMissionHL{
   margin-left: 40%;
   font-weight: bolder;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 
 /* .about_Us{
@@ -96,7 +83,7 @@ body{
   width: 100%;
   height: 70px;
   position: relative;
-  background: rgb(12, 148, 172);
+  background: rgb(12, 172, 201);
 }
 #pointer:after {
   content: "";
@@ -105,7 +92,7 @@ body{
   bottom: 0;
   width: 0;
   height: 70px; 
-  border-left: 20px solid rgb(12, 148, 172);
+  border-left: 20px solid rgb(12, 172, 201);
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
 }
@@ -116,7 +103,7 @@ body{
   bottom: 0;
   width: 0;
   height: 70px;
-  border-left: 20px solid rgb(12, 148, 172);
+  border-left: 20px solid rgb(12, 172, 201);
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
 }  
@@ -127,12 +114,12 @@ body{
 }
 
 #ourMission{
-  display: flex;
-  justify-self: left;
-  margin-left: 15%;
-  width: 400px;
-  margin-right: 3rem;
-
+  margin-left: 10%;
+  margin-right: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 5%;
 }
 
 #missionPic{
@@ -160,17 +147,16 @@ body{
 #divider{
   width: 100%;
   height: 100px;
-  background-color:rgb(12, 148, 172);
+  background-color:rgb(12, 172, 201);
 }
 
 
 /* footer */
 
-footer {
+#footer {
   display: block;
     width: 100%;
-    height: 50px;
-    background-color: white;
+    background-color: rgb(251, 252, 252);
     color: black;
     text-align: center;
     font-family: 'Amatic SC', cursive;
@@ -256,3 +242,4 @@ font-family: 'Amatic SC', cursive;
 }
 
  
+media

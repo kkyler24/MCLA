@@ -6,8 +6,6 @@ html {
 }
 body{
     height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 *,*::after, *::before{
     box-sizing: border-box;
@@ -30,6 +28,33 @@ body{
    display: block;
 }
 
+#indexNav{
+  font-family: 'Amatic SC', cursive;
+  word-spacing: 1rem;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0rem;
+}
+
+a:link, a:visited{
+  color: white;
+  font-size:25px ;
+  padding: 0rem;
+}
+
+.shadow.navbar {
+  position: relative;
+  box-shadow: 0 3px 4px rgb(0, 0, 0, 0.3), 0 0 40px rgb(0, 0, 0, 0.1) inset;
+}
+
+.shadow::before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  box-shadow: 0 0 20px  rgb(0, 0, 0, 0.8);
+}
+
+/* section One */
 #ourMotto {
     font-family: 'Amatic SC', cursive;
     float: left;
@@ -39,32 +64,12 @@ body{
     margin-bottom: 10% ;
 }
 
-#indexNav{
-    font-family: 'Amatic SC', cursive;
-    word-spacing: 1rem;
-    font-size: 30px;
-    font-weight: bold;
-    padding: 0rem;
+/* sectionTwo */
+#aUsHeadline{
+
 }
 
-
-a:link, a:visited{
-    color: white;
-    font-size:25px ;
-    padding: 0rem;
-}
-
-.shadow.navbar {
-    position: relative;
-    box-shadow: 0 3px 4px rgb(0, 0, 0, 0.3), 0 0 40px rgb(0, 0, 0, 0.1) inset;
-}
-
-.shadow::before{
-    content: "";
-    position: absolute;
-    z-index: -1;
-    box-shadow: 0 0 20px  rgb(0, 0, 0, 0.8);
-}
+/* footer */
 
 #footer {
     width: 100%;
@@ -76,16 +81,12 @@ a:link, a:visited{
     font-family: 'Amatic SC', cursive;
  }
 
- .container{
-  height: 50%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  margin-top: 30px;
+ #main > p {
+  font-size: 30px;
+  margin-bottom: 0;
  }
 
-.text{
+/* .text{
 font-family: 'Amatic SC', cursive;
   font-weight: 300;
   font-size: 50px;
@@ -96,31 +97,6 @@ font-family: 'Amatic SC', cursive;
   color: #0e0808;
 }
 
-#aboutUsC{
-    width: 100%;
-    background-color: white;
-    height: 500px;
-    display: block;
-    position: relative;
-    bottom: 0px;
-    color: black;
-    align-items: flex-end;
-}
-.flex-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-
-.headlineAboutUs{
-   align-content: center;
-    content: "";
-    position: relative;
-    font-family: 'Amatic SC', cursive;
-    font-size: 50px;
-    font: bold;
-    color: white;
-  }
   #pointer {
     width: 600px;
     height: 70px;
@@ -134,11 +110,11 @@ font-family: 'Amatic SC', cursive;
     bottom: 0;
     width: 0;
     /* height: 70px; */
-    border-left: 20px solid rgb(12, 148, 172);
+    /* border-left: 20px solid rgb(12, 148, 172);
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
-  }
-  #pointer:before {
+  } */
+  /* #pointer:before {
     content: "";
     position: absolute;
     right: -20px;
@@ -148,12 +124,5 @@ font-family: 'Amatic SC', cursive;
     border-left: 20px solid rgb(12, 148, 172);
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
-  }
+  }  */
  
-  .ourMission{
-   
-    margin-top: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
-  
-  }

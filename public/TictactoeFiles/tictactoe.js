@@ -1,4 +1,5 @@
-
+//  const computerpieces= ($("circle", "square", "dash"));
+//  console.log(computerpieces)
 // random words should be put in here and converted to morse code. the computer should evaluate if your letter box matches the randomized word to win the round. 
 // };
 let selectedOption = "circleP";
@@ -36,7 +37,6 @@ function TicTacToeGame() {
     }
     function checkFunction(){ 
         let tttBoard = Array.from($(".cellBOne"));
-        
         let firstRowString = "";
         tttBoard.forEach((cell, i) => {
             if (cell.classList[2] === "circleP")
@@ -50,22 +50,34 @@ function TicTacToeGame() {
         let match = wordMatch.find(str=>{
           return  firstRowString === str;
         })
- $()
+ 
         if (match) {
             console.log("match");
             console.log(match);
+            match.forEach((el) => 
+            $(el.classname).addClass(".strikeOut")
+         )
+           
         }
         
        
         
             
     }
-
+    // const cellElements = document.querySelectorAll('[data-cell]')
+    // cellElements.forEach(cell => {
+    //     cell.classList.remove(X_CLASS)
+    //     cell.classList.remove(CIRCLE_CLASS)
+    //     cell.removeEventListener('click', handleClick)
+    //     cell.addEventListener('click', handleClick, { once: true })
+    //   })
    
     // })
 
     function takeTurn() {
-        console.log("turn", turn);
+      if (board.checkForWinner()) {
+          return;
+      }
         if (turn % 2 === 0) {
             humanPlayer.takeTurn();
         } else {
@@ -90,7 +102,42 @@ function TicTacToeGame() {
 function Board() {
     this.positions = Array.from($(".cellBOne"));
     // console.log(this.positions);
+    let winner = false;
+    this.checkForWinner = function (){
+        const winningCombinations = [
+            [0,1,2,3],
+            [4,5,6,7],
+            [8,9, 10,11],
+            [12,13,14,15],
+            // [0,4,8,12],
+            // [1,5,9,13],
+            // [2,6,10,14],
+            // [3,7,11,15]
+        ];
+    }
 }
+    // const positions = this.positions;
+    // winningCombinations.forEach((winningCombo) => {
+    //     const pos0InnerText = positions[winningCombo[0]].innerText;
+    //     const pos1InnerText = positions[winningCombo[1]].innerText;
+    //     const pos2InnerText = positions[winningCombo[2]].innerText;
+    //     const pos2InnerText = positions[winningCombo[3]].innerText;
+    //     const isWinningCombo = pos0InnerText !== '' &&
+    //       pos0InnerText === pos1InnerText && pos1InnerText === pos2InnerText;
+    //     if (isWinningCombo) {
+    //         winner = true;
+    //         winningCombo.forEach((index) => {
+    //           positions[index].className += ' winner';
+    //         })
+    //     }
+    //   });
+  
+//       return winner;
+//     }
+//   }
+
+    
+
 
 
 

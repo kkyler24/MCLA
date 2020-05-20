@@ -180,6 +180,27 @@ body{
 
 }
 
+#font{
+  font-family: 'Amatic SC', cursive;
+  font-size: large;
+}
+/* Form */
+#div1 {
+  width: 500px;
+  height: 150px;
+  box-sizing: border-box;
+  font-family: 'Amatic SC', cursive;
+}
+#email{
+  width: 300px;
+  font-family: 'Amatic SC', cursive;
+}
+#psw{
+  width: 300px;
+  white-space: normal;
+  font-family: 'Amatic SC', cursive;
+}
+
 
 /* footer */
 
@@ -260,16 +281,3 @@ footer .footer-col {
     font-size: 25px;
     padding: 0rem;
 }
-/* .text{
-font-family: 'Amatic SC', cursive;
-  font-weight: 300;
-  font-size: 50px;
-  color: rgb(14, 11, 11);
-  word-spacing: 0.5rem;
-}
-.dud{
-  color: #0e0808;
-}
-
- 
-media

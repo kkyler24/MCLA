@@ -16,7 +16,6 @@ var PORT = process.env.PORT || 8080;
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
 app.use(express.static("public")); 
 
 // app.engine("handlebars", exphbs({ defaultLayout: "main" }));
@@ -40,7 +39,6 @@ app.get("/api/words/:range",function(req,res){
    });
 })
 
-
 app.get("/api/words",function(req,res){
   db.Words02.findAll().then(function(db_words){ 
     res.json(db_words)
@@ -59,9 +57,6 @@ app.get("/race", function(req, res) {
 app.get("/about", function(req, res) {
   res.sendFile(path.join(__dirname,"public/about.html"))
 });
-
-
-// app.get("/ttt", function(req, res)); 
 
 db.sequelize.sync({}).then(function() {
   app.listen(PORT, function() {

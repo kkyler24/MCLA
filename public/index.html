@@ -83,7 +83,7 @@
         <div data-aos="fade-right" data-aos-duration="2500" data-aos-mirror="true"
         data-aos-once="false">
         <div id="whoWeRparagraph">
-        <h1>Who We Are</h1>
+        <h1 id="font">Who We Are</h1>
         <Div class="outSideDivAU">
                 <div class="row col-5">
                     <P></P>
@@ -92,17 +92,17 @@
                     <br>
                         <div class="row justify-content-center">
                             <div class=" col-lg-4 col-md-4 col-sm-6 mb-5 ml-5 mr-5">
-                                <h4>Ky Kyler</h4>
+                                <h4 id="font">Ky Kyler</h4>
                                 <img src="Assets/ky2.jpg" class=" img-rounded img-thumbnail" >
-                                <p> Ky is an EdTech Specialist and Web Developer at Columbia Engeering. Ky has two
+                                <p id="font"> Ky is an EdTech Specialist and Web Developer at Columbia Engeering. Ky has two
                                     Masters in Special Education and Technology. Ky plans on desiging software that
                                     helps
                                     students with disabilities learn at the same levels as their peers.</p>
                             </div>
                             <div class=" col-lg-4 col-md-4 col-sm-6 mb-5 ml-5 mr-5">
-                                <h4>Jim Holylong</h4>
+                                <h4 id="font">Jimholy Long</h4>
                                 <img src="Assets/Jimholy.jpg" class="group-member-image img-rounded img-thumbnail">
-                                <p>Jim is an aspiring Web Developer at Columbia Engeering with a Bachelor's in Molecular
+                                <p id="font">Jim is an aspiring Web Developer at Columbia Engeering with a Bachelor's in Molecular
                                     Biology. Jim plan's to combine the two sciences to help save the world!<br>
                                 </p>
 
@@ -116,7 +116,7 @@
     </div>
     <div class="contactForm row">
       <div class="form col-sm-4 col-lg-6">
-        <p>
+        <p id="font">
           At the MorseCode Learning Academy; we teach differently. 
           We teach your child how they would best learn, not how a standardized 
           test says they should be learning. We combine neuroscience, education 
@@ -126,7 +126,37 @@
            and have them champion at the same levels and rates as their peers. That's The MCLA way.
         </p>
       </div>
-      <div class="formPic col-sm-4 col-lg-4"></div>
+      <div class="formPic col-sm-4 col-lg-4">
+        <form action="action_page.php">
+            <div class="container">
+              <h2 id="font">Register</h2>
+              <div class="row">
+
+              <label for="email" id="email"><b>Email: </b></label>
+              <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+              </div>
+
+              <div class="row" id="psw">
+              <label for="psw"><b>Password:</b></label>
+
+              <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw"required>
+
+              </div>
+
+              <div class="row">
+              <label for="Message"id="font"><b>We would love to hear from you!!!:</b></label>
+              <input type="text" placeholder="" name="text"id="div1">
+              </div>
+            <!-- <p id="font">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p> -->
+            <button type="submit" class="registerbtn" id="font">Register</button>
+            <div class="container signin">
+              <!-- <p>Already have an account? <a href="#">Sign in</a>.</p> -->
+            </div>
+          </form>
+      </div>
     </div>
    
         <footer id="footer" class="text-center">

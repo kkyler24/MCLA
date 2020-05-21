@@ -28,7 +28,7 @@ charCodes["y"] = "_.__";
 charCodes["z"] = "__..";
 
 const alphabetCode= 
-    {"a" : ".-XX",
+    {"a" : "._XX",
      "b" : "_...",
      "c" : "_._.",
      "d" : "_..X",
@@ -61,12 +61,12 @@ let secondGradeSW = [
     "call",
     "sit",
     "cold",
-    "sleep",
+    "ball",
     "does",
     "tell",
     "buy",
     "best",
-    "because",
+    "bat",
     "dont",
     "their",
     "fast",
@@ -75,8 +75,11 @@ let secondGradeSW = [
     "those",
     "five",
     "upon",
-    "found",
-    "us"
+    "fun",
+    "us", 
+    "cat",
+    "bee",
+    "sad"
 
 ];
 

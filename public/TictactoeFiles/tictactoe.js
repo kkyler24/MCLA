@@ -98,6 +98,16 @@ function checkFunction(){
      
     })
     if (match) {
+        alert(RowString)
+        tttBoard.forEach((cell, i) => {
+            if (cell.classList[2] === "circleP")
+                cell.classList.remove("circleP")
+            if (cell.classList[2] === "dashP")
+            cell.classList.remove("dashP")
+            if (cell.classList[2] === "squareP")
+            cell.classList.remove("squarep")
+                
+        })
         // ($(.cellBOne.match))
     console.log("match");
     console.log(match); 

@@ -184,4 +184,4 @@ VALUES
 ('picture', 7),
 ('birthday', 8),
 ('children', 8),
-('squirrel', 8),
+('squirrel', 8);

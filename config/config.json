@@ -3,7 +3,7 @@
 {
   "development": {
     "username": "root",
-    "password": "Homoglobin#1",
+    "password": "jim1",
     "database": "words_db",
     "host": "127.0.0.1",
     "dialect": "mysql",
@@ -11,17 +11,17 @@
   },
   "test": {
     "username": "root",
-    "password": "",
+    "password": "jim1",
     "database": "words_db",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
   },
   "production": {
-    "username": "root",
-    "password": "",
-    "database": "words_db",
-    "host": "127.0.0.1",
+    "username": "gqkdpav6uybxztr0",
+    "password": "i2ob7sfh0l2kbdts",
+    "database": "pa7th7pc5bytwd2b",
+    "host": "ryvdxs57afyjk41z.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql",
     "operatorsAliases": false
   }

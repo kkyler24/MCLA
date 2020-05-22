@@ -143,7 +143,7 @@ body{
 
 /* who we are row about us */
 #whoWeR{
-  background-color: rgba(183, 212, 241, 0.774);
+  
   width: 100%;
 }
 
@@ -158,6 +158,11 @@ body{
   background-color:rgb(12, 172, 201);
 }
 
+.divider.flex-container{
+  width: 100%;
+  height: 100px;
+  background-color:rgb(12, 172, 201);
+}
 
 /* contact form */
 #fromBackR{
@@ -209,29 +214,30 @@ input,textarea, #submitB {
  background: rgb(12, 172, 201);
  font-weight: normal;
 }
+#talkbubble {
+  width: 120px;
+  height: 80px;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border-color: white;
+  background: transparent;
+}
+
+#talkbubble:before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 26px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-right: 26px solid red;
+  border-bottom: 13px solid transparent;
+}
 
 
-/* 
-#font{
-  font-family: 'Amatic SC', cursive;
-  font-size: large;
-}
-/* Form */
-/* #div1 {
-  width: 500px;
-  height: 150px;
-  box-sizing: border-box;
-  font-family: 'Amatic SC', cursive;
-}
-#email{
-  width: 300px;
-  font-family: 'Amatic SC', cursive;
-}
-#psw{
-  width: 300px;
-  white-space: normal;
-  font-family: 'Amatic SC', cursive;
-} */
 
 
 /* footer */

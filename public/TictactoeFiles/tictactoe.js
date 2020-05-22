@@ -1,4 +1,4 @@
-// selection buttons for player
+/// selection buttons for player
 let selectedOption = "circleP";
 $("#squareButton").click(function (event) {
   selectedOption = "squareP";
@@ -124,8 +124,8 @@ function checkFunction() {
     console.log(match);
 
     // checking for if match is true and it is the players turn, then adding points to the player and assigning letter to the player.
-    if (match = true && turn % 2 === 0) {
-        PlayerScore.shift
+    // if (match = true && turn % 2 === 0) {
+    //     PlayerScore.shift
         
   }
 }

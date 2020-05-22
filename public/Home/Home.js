@@ -62,18 +62,21 @@ class TextScramble {
     "find out more about us below",
   ]
   
+  // word scrambler text
   const el = document.querySelector('.text')
   const fx = new TextScramble(el)
-  
+
   let counter = 0
   const next = () => {
     fx.setText(phrases[counter]).then(() => {
       setTimeout(next, 2500)
     })
     counter = (counter + 1) % phrases.length
-    
+
   }
+
  next()
+ 
   
  AOS.init({
   duration: 1200,

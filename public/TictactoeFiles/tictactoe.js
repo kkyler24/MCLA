@@ -13,8 +13,8 @@ $("#dashButton").click(function (event) {
 const ticTacToeGame = new TicTacToeGame();
 let turn = 0;
 ticTacToeGame.start();
-let playerScore =[];
-let computerScore =[];
+let playerScore = [];
+let computerScore = [];
 
 // creates new game
 function TicTacToeGame() {
@@ -102,23 +102,25 @@ function checkFunction() {
       alert(match + `  Player awarded Letter. Point + 2`);
     }, 1000);
     tttBoard.forEach((cell, i) => {
+      setTimeout(function () { 
       if (cell.classList[2] === "circleP")
-      cell.classList.remove("circleP");
-       
+        cell.classList.remove("circleP");
+
       if (cell.classList[2] === "dashP")
-      cell.classList.remove("dashP");
-       
+        cell.classList.remove("dashP");
+
       if (cell.classList[2] === "squareP")
-      cell.classList.remove("squareP");
-    
-      if (cell.classList[2] === "circle")
-      cell.classList.remove("circle");
-     
+        cell.classList.remove("squareP");
+
+        if (cell.classList[2] === "circle")
+        cell.classList.remove("circle");
+
       if (cell.classList[2] === "dash")
-      cell.classList.remove("dash");
-       
+        cell.classList.remove("dash");
+
       if (cell.classList[2] === "square")
-      cell.classList.remove("square");
+        cell.classList.remove("square")
+      }, 1000);
     });
     console.log("match");
     console.log(match);
@@ -126,7 +128,7 @@ function checkFunction() {
     // checking for if match is true and it is the players turn, then adding points to the player and assigning letter to the player.
     // if (match = true && turn % 2 === 0) {
     //     PlayerScore.shift
-        
+
   }
 }
 
@@ -168,39 +170,53 @@ function ComputerPlayer(board) {
 // Letter Conversion Therapy
 
 // the code below takes the  cells from the array and testing to see if it is equal to the classes circle and dashes and x's for the computer then checks to see if turn is odd to assign computer the points and letter
-// let tttBoard = Array.from($(".cellBOne"));
-// let RowStringComp = "";
-// tttBoard.forEach((cell, i) => {
-//   if (cell.classList[1] === "circle") RowStringComp += ".";
-//   if (cell.classList[1] === "dash") RowStringComp += "_";
-//   if (cell.classList[1] === "square") RowStringComp += "X";
-// });
-// console.log(RowStringComp);
-// let matchTwo = wordMatch.find((str) => {
-//     return RowStringComp === str;
-//   });
+let tttBoard = Array.from($(".cellBOne"));
+let RowStringComp = "";
+tttBoard.forEach((cell, i) => {
+  if (cell.classList[1] === "circle") RowStringComp += ".";
+  if (cell.classList[1] === "dash") RowStringComp += "_";
+  if (cell.classList[1] === "square") RowStringComp += "X";
+});
+console.log(RowStringComp);
+let matchTwo = wordMatch.find((str) => {
+  return RowStringComp === str;
+});
 
-//   // the below code resets the baord when a match is found for the computer
-//   if (matchTwo) {
-//     alert(RowStringComp + "Computer match!");
-//     tttBoard.forEach((cell, i) => {
-//       if (cell.classList[2] === "circle") cell.classList.remove("circle");
-//       if (cell.classList[2] === "dash") cell.classList.remove("dash");
-//       if (cell.classList[2] === "square") cell.classList.remove("square");
-//     });
-//     // checking for if match is true and it is the players turn, then adding points to the player and assigning letter to the player.
-//     // if (match = true && turn % 2 === 0) {
-//     //     // RowString ==
-//     // })
-//     console.log("match");
-//     console.log(match);
-//   }
 
-//the below code takes the charcodes object array and matches it to key of the key value pairs of the object, and spits back the matching letter.
-// console.log(Object.keys(charCodes));
-// let morseMatch = "";
-// Object.keys(charCodes).forEach((mCodes) => {
-//   console.log(charCodes[mCodes]);
-//   if (RowStringComp === charCodes[mCodes]) morseMatch = mCodes;
-// });
-// console.log(morseMatch);
+// the below code resets the baord when a match is found for the computer
+if (matchTwo) {
+  setTimeout(function () {
+    alert(RowStringComp + ` Computer awarded Letter. Point + 2`);
+  }, 1000);
+  tttBoard.forEach((cell, i) => {
+   
+    if (cell.classList[2] === "circle")
+      cell.classList.remove("circle");
+
+    if (cell.classList[2] === "dash")
+      cell.classList.remove("dash");
+
+    if (cell.classList[2] === "square")
+      cell.classList.remove("square");
+  });
+  console.log("matchTwo");
+  console.log(matchTwo);
+
+  // checking for if match is true and it is the players turn, then adding points to the player and assigning letter to the player.
+  // if (match = true && turn % 2 === 0) {
+  //     PlayerScore.shift
+}
+
+// checking for if match is true and it is the players turn, then adding points to the player and assigning letter to the player.
+// if (match = true && turn % 2 === 0) {
+//     // RowString ==
+// })
+
+// the below code takes the charcodes object array and matches it to key of the key value pairs of the object, and spits back the matching letter.
+console.log(Object.keys(charCodes));
+let morseMatch = "";
+Object.keys(charCodes).forEach((mCodes) => {
+  console.log(charCodes[mCodes]);
+  if (RowStringComp === charCodes[mCodes]) morseMatch = mCodes;
+});
+console.log(morseMatch);

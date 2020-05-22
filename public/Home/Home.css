@@ -159,9 +159,8 @@ body{
 }
 
 .divider.flex-container{
-  display: flex;
   width: 100%;
-  height: 650px;
+  height: 100px;
   background-color:rgb(12, 172, 201);
 }
 
@@ -215,49 +214,6 @@ input,textarea, #submitB {
  background: rgb(12, 172, 201);
  font-weight: normal;
 }
-
-.headlineResearch{
-  margin-left: 10%;
-  width: 300px;
-  margin-bottom: 15%;
-  margin-top: 5%;
-
-  }
-
-#theResearch{
-margin-left:10%;
-height: 300px;
-  }
-
-  #speechBubbleResearch{
-
-  }
-
-#speechBubble {
-	position: relative;
-	background:transparent;
-  height: 400px;
-    width: 500px;
-    border: solid;
-    border-radius: 10px;
-    border-color: white;
-    border-width: 5px;
-}
-
-#speechBubble:after {
-  content: '';
-	position: absolute;
-	left: 0;
-	top: 50%;
-	width: 0;
-	height: 0;
-	border: 50px solid transparent;
-	border-right-color:#f8f9fa;
-	border-left: 0;
-	margin-top: -41px;
-	margin-left: -51px;
-}
-
 
 /* footer */
 

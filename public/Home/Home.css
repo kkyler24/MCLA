@@ -214,7 +214,7 @@ input,textarea, #submitB {
  background: rgb(12, 172, 201);
  font-weight: normal;
 }
-<<<<<<< HEAD
+
 #talkbubble {
   width: 120px;
   height: 80px;
@@ -237,35 +237,6 @@ input,textarea, #submitB {
   border-right: 26px solid red;
   border-bottom: 13px solid transparent;
 }
-
-
-=======
-
-
-/* 
-#font{
-  font-family: 'Amatic SC', cursive;
-  font-size: large;
-}
-/* Form */
-/* #div1 {
-  width: 500px;
-  height: 150px;
-  
-  box-sizing: border-box;
-  font-family: 'Amatic SC', cursive;
-}
-#email{
-  width: 500px;
-  height: 25px;
-  font-family: 'Amatic SC', cursive;
-}
-#psw{
-  width: 500px;
-  white-space: normal;
-  font-family: 'Amatic SC', cursive;
-} */
->>>>>>> 225a07e98cab4bc63ca6041045c996f50d035669
 
 
 /* footer */
@@ -347,3 +318,6 @@ footer .footer-col {
     font-size: 25px;
     padding: 0rem;
 }
+
+
+/* media Queries */

@@ -220,15 +220,17 @@ input,textarea, #submitB {
 /* #div1 {
   width: 500px;
   height: 150px;
+  
   box-sizing: border-box;
   font-family: 'Amatic SC', cursive;
 }
 #email{
-  width: 300px;
+  width: 500px;
+  height: 25px;
   font-family: 'Amatic SC', cursive;
 }
 #psw{
-  width: 300px;
+  width: 500px;
   white-space: normal;
   font-family: 'Amatic SC', cursive;
 } */

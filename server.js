@@ -16,7 +16,6 @@ var PORT = process.env.PORT || 8080;
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
 app.use(express.static("public")); 
 
 // app.engine("handlebars", exphbs({ defaultLayout: "main" }));
@@ -24,6 +23,7 @@ app.use(express.static("public"));
 // should be inside html-routes.js
 
 app.get("/", function(req, res) {
+  
   res.sendFile(path.join(__dirname,"public/index.html"))
 });
 
@@ -39,7 +39,6 @@ app.get("/api/words/:range",function(req,res){
     res.json(db_words)
    });
 })
-
 
 app.get("/api/words",function(req,res){
   db.Words02.findAll().then(function(db_words){ 
@@ -60,10 +59,7 @@ app.get("/about", function(req, res) {
   res.sendFile(path.join(__dirname,"public/about.html"))
 });
 
-
-// app.get("/ttt", function(req, res)); 
-
-db.sequelize.sync({}).then(function() {
+db.sequelize.sync({force:true}).then(function() {
   app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
   });

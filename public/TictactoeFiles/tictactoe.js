@@ -100,8 +100,9 @@ function checkFunction() {
   if (match) {
     setTimeout(function () {
       alert(match + ` Player awarded Letter. Point + 2`);
-    }, 1500);
+    }, 1000);
     tttBoard.forEach((cell, i) => {
+     
       if (cell.classList[2] === "circleP")
         cell.classList.remove("circleP");
 
@@ -119,7 +120,7 @@ function checkFunction() {
 
       if (cell.classList[2] === "square")
         cell.classList.remove("square")
-      
+    
       // match.addEventListener("event", ticTacToeGame.start());
       // match.removeEventListener("event", ticTacToeGame.start())
     });

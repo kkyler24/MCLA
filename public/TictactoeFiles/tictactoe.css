@@ -161,6 +161,7 @@ body{
 #dashButton{
     width: 93.31px;
     position: relative;
+    z-index: 1;
    
 }
 .circle {
@@ -241,6 +242,7 @@ body{
     width:fit-content ;
     font-size: 25px;
     margin-left: 1rem!important;
+    
 }
    
 #displayBox.centered li{
@@ -274,18 +276,18 @@ p{
 }
 /* end front-end */
 
-.cellBOne.strikOut::before{
+/* .cellBOne.strikOut::before{
         content: "";
         position: absolute;
         width: calc(var(--mark-size)*1.4
         );
         /* controls the height of the cricles */
         /* transform: rotate(90deg); */
-        height: calc(var(--mark-size)*.18);
-        background-color: rgb(8, 8, 8);
+        /* height: calc(var(--mark-size)*.18);
+        background-color: rgb(8, 8, 8); */
         /* controls how the circle looks */
        
-    }
+    } */
 
     #footer {
         display: block;
@@ -365,3 +367,19 @@ p{
           padding: 0rem;
       }
      
+      /* #collectionbox{
+        font-weight: bold;
+        width:fit-content ;
+        font-size: 16px; */
+        
+      
+      #collectionbox{
+        display: flex;
+        position: relative;
+        z-index: 2;
+        justify-self: start;
+        background-color: black;
+        height: 30px;
+        width: 30px;
+        margin-right: 200px;
+       }
